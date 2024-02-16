@@ -1,3 +1,8 @@
+*{
+  background-color: white;
+  color:black
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -11,9 +16,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +29,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +47,44 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+.Navbar {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: black;
+  color: white;
+  min-height: 50px;
+  margin: 0;
+  padding: 0; 
+}
+
+.about-li , .about-gh {
+  height:40px;
+  width:40px;
+}
+
+.Developers{
+  display:flex;
+  flex-direction: row;
+  gap:40px;
+}
+
+.dev1 , .dev2{
+  display:flex;
+  flex-direction: column;
+}
+
+.navlink{
+  background-color: black;
+  gap:40px
+}
+
+.Navbar img{
+  width: 100px;
+  height: 100px;
+  background-color: black;
 }
