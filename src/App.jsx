@@ -7,6 +7,7 @@ import CardsList from './pages/CardsList';
 import CardDetails from './pages/CardDetails';
 import Contacts from './pages/Contacts';
 import ExtraPage from './pages/ExtraPage';
+import Error from './pages/Error'
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
         <Route path="/cards/:cardId" element={<CardDetails/>}/>
         <Route path="/contacts" element={<Contacts/>}/>
         <Route path="/extra" element={<ExtraPage/>}/>
-
+        <Route path='*' element={<Error/>}/>
        </Routes>
       </main>
       
