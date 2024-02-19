@@ -10,21 +10,30 @@ function HomePage() {
       <section className="mainSection">
         <div>
           <Link to={'/cards'}>
-            <button className='cardListBtn'>Cards List</button>
+            <button class="btn-31">
+              <span class="text-container">
+                <span class="text">Cards List</span>
+              </span>
+            </button>
           </Link>
         </div>
       </section>
-      
+      <section className="WhiteBar">
+
+      </section>
+
       <section className="sectionDay">
-        <div>
-          <CardOfDay/>
+        <div className="divWallpaper">
+          <div className="overlay">
+          <CardOfDay />
           <Link to="/"><button>Card Details</button></Link>
-          <FactOfDay/>
+          <FactOfDay />
           <Link to="/facts"><button>More Fun Facts</button></Link>
+          </div>
         </div>
       </section>
-      
-      <Footer/>
+
+      <Footer />
     </main>
   )
 }
