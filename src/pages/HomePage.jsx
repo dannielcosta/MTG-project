@@ -25,10 +25,12 @@ function HomePage() {
       <section className="sectionDay">
         <div className="divWallpaper">
           <div className="overlay">
+            <div className='secInfo'>
           <CardOfDay />
           <Link to="/"><button>Card Details</button></Link>
           <FactOfDay />
           <Link to="/facts"><button>More Fun Facts</button></Link>
+          </div>
           </div>
         </div>
       </section>

@@ -8,44 +8,45 @@ const API = APIURL()
 
 function CardsList() {
 
-  const [cards, setCards] = useState([]);
+    const [cards, setCards] = useState([]);
 
-  useEffect(()=>{
-    axios
-    .get(`${API}/search?q=c`)
-    .then((response)=>{
-      setCards(response.data.data)
-      console.log(response.data.data)
-    })
-    .catch((error)=>{console.log(error)})
-  }, [])
+    useEffect(() => {
+        axios
+            .get(`${API}/search?q=c`)
+            .then((response) => {
+                setCards(response.data.data)
+                console.log(response.data.data)
+            })
+            .catch((error) => { console.log(error) })
+    }, [])
 
-  const cardsWithImage = cards.filter((card)=>{return(card.image_uris?.small)})
-  
-  return (
+    const cardsWithImage = cards.filter((card) => { return (card.image_uris?.small) })
 
-    <div className='cardsListPage'>
-        <h1>Cards List</h1>
-      <section>
-        <p>Here there will be filters</p>
-      </section>
+    return (
+                <div className='cardsListPage'>
+                    <h1>Cards List</h1>
+                    <section>
+                        <p>Here there will be filters</p>
+                    </section>
 
-      <div className="cardsDisplay">
-        {cardsWithImage.length > 0 &&
-          cardsWithImage.map(card => (
-            <Link to={`/cards/${card.id}`}>
-                <img key={card.id} src={card.image_uris?.small} alt={card.name} />
-            </Link>
-          ))
-        }
-      </div>
-    </div>
+                    <div className="cardsDisplay">
+                        {cardsWithImage.length > 0 &&
+                            cardsWithImage.map(card => (
+                                <Link to={`/cards/${card.id}`}>
+                                    <img key={card.id} src={card.image_uris?.small} alt={card.name} />
+                                </Link>
+                            ))
+                        }
+                    </div>
+                    
+                </div>
 
-  );
+
+
+    );
 }
 
 export default CardsList
-
 /*
 {
     "cards": [
