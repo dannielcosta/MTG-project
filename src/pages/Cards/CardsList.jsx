@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import APIURL from '../data/mtg-api'
+import APIURL from '../../data/mtg-api'
 import { Link } from 'react-router-dom'
 
 const API = APIURL()
@@ -27,6 +27,9 @@ function CardsList() {
                     <h1>Cards List</h1>
                     <section>
                         <p>Here there will be filters</p>
+                        <Link to={"/custom-cards"}>
+                            <p>Custom Cards List</p>
+                        </Link>
                     </section>
 
                     <div className="cardsDisplay">

@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import APIURL from '../data/mtg-api'
+import APIURL from '../../data/mtg-api'
 
 const API = APIURL()
 
@@ -27,6 +27,7 @@ function CardDetails() {
       <h1>{card.name}</h1>
       <div className='detailsContainer'>
           <img src={card.image_uris?.normal} alt={card.name} />
+          
   
         <section className='cardDetailsPageText'>
           <h3>Type: {card.type_line}</h3>

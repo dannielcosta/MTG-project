@@ -8,7 +8,11 @@
   text-align: center;
 }
 */
-
+*{
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -62,23 +66,41 @@ body, html {
   padding: 0; 
   display:flex;
   align-items: center;
-  gap:40px
+  gap:12px;
+  z-index: 1000;
 }
 
 .about-li , .about-gh {
-  height:40px;
-  width:40px;
+  height:20px;
+  width:20px;
+  padding-right: 6px;
+  padding-top: 5px;
 }
 
 .Developers{
   display:flex;
   flex-direction: row;
   gap:40px;
+  justify-content: space-evenly;
 }
 
 .dev1 , .dev2{
   display:flex;
+  background-image: url("/src/images/custom-card.png");
   flex-direction: column;
+  background-size: cover;
+  width: 320px;
+  height: 450px;
+}
+.devName{
+  padding-left: 40px ;
+}
+.headerCard{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 13px;
+  padding-right: 25px;
 }
 
 .navlink{
@@ -127,7 +149,9 @@ body, html {
   padding: 0; 
   display:flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
   gap:30px;
   align-items: center;
 }
@@ -167,10 +191,20 @@ body, html {
   height: 400px;
   border-radius: 13px;
 }
-.cardDetailsPageText{
-  margin-left: 50px;
+.cardDetailsPageText {
+  background-image: url("images/paper.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 80px;
+  width: 500px; 
+  height: auto;
+  padding-left: 70px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
+  color: black;
+  
 }
 .detailsContainer{
   display: flex;
@@ -325,7 +359,7 @@ body, html {
   }
 }
 
-.divWallpaper {
+.divWallpaper{
     position: relative;
     width: 100%;
     height: 100%;
@@ -371,11 +405,136 @@ body, html {
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
+    justify-content: end; /* Center vertically */
     align-items: center; /* Center horizontally */
-  }
+}
   
   .btn-31 {
     /* Your existing styles for the button */
+    margin-bottom: 100px;
   }
   
+/* Apenas para mostrar   vvv */
+  .createCard, .Developers, .Facts, .ver{
+    margin-top: 200px;
+  }
+
+
+/* Apenas para mostrar ^^^ */
+
+.navlink{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-Links h3{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-Links h3:hover{
+  color: rgb(244,182,63);
+  text-decoration: underline;
+  filter: drop-shadow(0 0 10px #f88c19aa);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navlink:hover{
+  color: rgb(244,182,63);
+  filter: drop-shadow(0 0 10px #f88c19aa);
+  background-color: transparent;
+}
+
+.Allies{
+  display:flex;
+  flex-direction: row;
+}
+
+
+.Colors{
+margin-top:200px;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px;
+}
+
+.About{
+  margin-top: 200px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap:30px
+
+}
+
+.About-Colors{
+  display:flex;
+  flex-direction: row;
+  gap:40px;
+}
+
+.About-Colors img{
+  height:150px;
+  width:150px;
+}
+
+
+
+/* button do about page entre os elements */
+.container {
+  display: flex;
+  position: relative;
+}
+
+.about-pageBtn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  padding: .5em 1.5em;
+  font-size: 20px;
+  font-weight: 600;
+  color: #7f5af0;
+  transition: all .3s ease;
+}
+
+.arrow {
+  fill: #94a1b2;
+  position: absolute;
+  pointer-events: none;
+  width: 24px;
+  right: 0;
+  top: 25%;
+  transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.about-pageBtn:hover {
+  letter-spacing: 2px;
+}
+
+.about-pageBtn:hover ~.second {
+  opacity: .66;
+  right: -20px;
+  transition-delay: 50ms;
+}
+
+.about-pageBtn:hover ~.third {
+  opacity: .33;
+  right: -40px;
+  transition-delay: 100ms;
+}
+
+.second, 
+.third {
+  opacity: 0;
+}
+

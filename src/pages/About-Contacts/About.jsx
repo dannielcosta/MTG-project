@@ -1,9 +1,27 @@
 import React from 'react'
-import MTGcolors from '../images/mtg-colors.png'
+import MTGcolors from '../../images/mtg-colors.png'
+import { Link } from 'react-router-dom'
+
+// Cards
+import artifactCol from "../../images/mtg-colors/artifact.png";
+import blackCol from "../../images/mtg-colors/black.png";
+import blueCol from "../../images/mtg-colors/blue.png";
+import greenCol from "../../images/mtg-colors/green.png";
+import redCol from "../../images/mtg-colors/red.png";
+import whiteCol from "../../images/mtg-colors/white.png";
+
 
 function About() {
   return (
-    <section>
+    <section className="About">
+      <div className="About-Colors">
+      <Link to="/about/black"><img src={`${blackCol}`} /></Link>
+      <Link to="/about/blue"><img src={`${blueCol}`} /></Link>
+      <Link to="/about/green"><img src={`${greenCol}`} /></Link>
+      <Link to="/about/red"><img src={`${redCol}`} /></Link>
+      <Link to="/about/white"><img src={`${whiteCol}`} /></Link>
+      <Link to="/about/artifacts"><img src={`${artifactCol}`} /></Link> 
+</div>
 
       <div className="about-intro">
         Released in 1993 by Wizards of the Coast, Magic was the first trading card game and had approximately 
