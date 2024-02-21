@@ -1,12 +1,65 @@
 import React from "react";
 import blackCol from "../../images/mtg-colors/black.png";
+import { Link } from "react-router-dom";
+
 
 function Black() {
   return (
     <section className="Colors">
+
+      {/* ------------------------------------- BUTTON TO CHANGE PAGE AND COLOR IMAGE   <- / ->   -------------------------------------------------- */}
+      <Link to="/about/artifacts">
+      <div class="container">
+  <button class="aboutPgBtnLeft">Button Left</button>
+  <span class="arrow first">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+    </svg>
+  </span>
+  <span class="arrow second">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+    </svg>
+  </span>
+  <span class="arrow third">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+    </svg>
+  </span>
+</div>
+
+      </Link>
+
       <div>
         <img src={`${blackCol}`} />
       </div>
+
+      <Link to="/about/blue">
+        <div class="container">
+          <button class="about-pageBtnRight">Button</button>
+          <span class="arrow first">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+          </span>
+          <span class="arrow second">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+          </span>
+          <span class="arrow third">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+          </span>
+        </div>
+      </Link>
+
+
+      {/*   ------------------------------------- ABOUT SECTION      -------------------------------------------------- */}
+
+
+
       <div>
         <strong>The Story </strong>
       </div>
@@ -48,80 +101,80 @@ function Black() {
         <strong>The Allies</strong>
       </div>
       <div className="Allies">
-      <div className="Humanoid/Intelligent Races">
-        <strong>Humanoid/Intelligent Races: </strong>
-        <br />
-        <ul>
-          <li>Aetherborn</li>
-          <li>Archon (shared with white)</li>
-          <li>Demons (iconic creature)</li>
-          <li>Avatars (shared with white)</li>
-          <li>Dauthi</li>
-          <li>Faeries (shared with blue)</li>
-          <li>Gorgons</li>
-          <li>Gremlins</li>
-          <li>Hags</li>
-          <li>Harpies (shared with blue)</li>
-          <li>Imps</li>
-          <li>Kor (shared with white and blue)</li>
-          <li>Liches</li>
-          <li>Moriok</li>
-          <li>Nezumi</li>
-          <li>Nightstalkers</li>
-          <li>Shades</li>
-          <li>Specters</li>
-          <li>Thrulls</li>
-          <li>Vampires (characteristic creature, shared with red and white)</li>
-          <li>Werewolves (shared with red and green)</li>
-          <li>Wraiths</li>
-        </ul>
+        <div className="Humanoid/Intelligent Races">
+          <strong>Humanoid/Intelligent Races: </strong>
+          <br />
+          <ul>
+            <li>Aetherborn</li>
+            <li>Archon (shared with white)</li>
+            <li>Demons (iconic creature)</li>
+            <li>Avatars (shared with white)</li>
+            <li>Dauthi</li>
+            <li>Faeries (shared with blue)</li>
+            <li>Gorgons</li>
+            <li>Gremlins</li>
+            <li>Hags</li>
+            <li>Harpies (shared with blue)</li>
+            <li>Imps</li>
+            <li>Kor (shared with white and blue)</li>
+            <li>Liches</li>
+            <li>Moriok</li>
+            <li>Nezumi</li>
+            <li>Nightstalkers</li>
+            <li>Shades</li>
+            <li>Specters</li>
+            <li>Thrulls</li>
+            <li>Vampires (characteristic creature, shared with red and white)</li>
+            <li>Werewolves (shared with red and green)</li>
+            <li>Wraiths</li>
+          </ul>
         </div>
         <br />
         <br />
         <br />
         <div className="Monstrous/Subservient Types">
-        <strong>Monstrous/Subservient Types:</strong>
-        <br />
-        <ul>
-          <li>Bats</li>
-          <li>Carriers</li>
-          <li>Eyes</li>
-          <li>Frogs</li>
-          <li>Horrors</li>
-          <li>Nightmares</li>
-          <li>Ogres (shared with red)</li>
-          <li>Ooze (shared with green)</li>
-          <li>Pest</li>
-          <li>Rats</li>
-          <li>Scorpions</li>
-          <li>Skeletons</li>
-          <li>Slugs</li>
-          <li>Surrakar (shared with blue)</li>
-          <li>
-            Zombies (another characteristic creature, shared with white in
-            Amonkhet and blue)
-          </li>
-        </ul>
+          <strong>Monstrous/Subservient Types:</strong>
+          <br />
+          <ul>
+            <li>Bats</li>
+            <li>Carriers</li>
+            <li>Eyes</li>
+            <li>Frogs</li>
+            <li>Horrors</li>
+            <li>Nightmares</li>
+            <li>Ogres (shared with red)</li>
+            <li>Ooze (shared with green)</li>
+            <li>Pest</li>
+            <li>Rats</li>
+            <li>Scorpions</li>
+            <li>Skeletons</li>
+            <li>Slugs</li>
+            <li>Surrakar (shared with blue)</li>
+            <li>
+              Zombies (another characteristic creature, shared with white in
+              Amonkhet and blue)
+            </li>
+          </ul>
         </div>
         <br />
         <br />
         <br />
         <div className="Classes">
-        <strong>Classes:</strong>
-        <br />
-        <ul>
-          <li>Assassins</li>
-          <li>Clerics (shared with white)</li>
-          <li>Knights (shared with white and red)</li>
-          <li>Mercenaries</li>
-          <li>Minions</li>
-          <li>Ninja (shared with blue)</li>
-          <li>Pirates (shared with blue and red)</li>
-          <li>Rogues (shared with blue and red)</li>
-          <li>Samurai (shared with white and red)</li>
-          <li>Warlocks</li>
-        </ul>
-      </div>
+          <strong>Classes:</strong>
+          <br />
+          <ul>
+            <li>Assassins</li>
+            <li>Clerics (shared with white)</li>
+            <li>Knights (shared with white and red)</li>
+            <li>Mercenaries</li>
+            <li>Minions</li>
+            <li>Ninja (shared with blue)</li>
+            <li>Pirates (shared with blue and red)</li>
+            <li>Rogues (shared with blue and red)</li>
+            <li>Samurai (shared with white and red)</li>
+            <li>Warlocks</li>
+          </ul>
+        </div>
       </div>
     </section>
   );
