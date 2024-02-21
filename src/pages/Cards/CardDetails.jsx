@@ -15,7 +15,7 @@ function CardDetails() {
     axios
     .get(`${API}/${cardId}`)
     .then((response)=>{
-      console.log(response.data)
+      console.log(response.data.colors)
       setCard(response.data)
     })
     .catch((error)=>{console.log(error)})

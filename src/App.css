@@ -231,10 +231,15 @@ body, html {
   flex-direction: row;
   gap:40px;
 }
+.cardsDisplay img{
+  width: 250px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
 .cardDetailsPage img{
   height: 400px;
   border-radius: 13px;
-
 }
 .cardDetailsPageText {
   background-image: url("images/paper.png");
