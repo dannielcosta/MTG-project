@@ -67,7 +67,7 @@ body, html {
   display:flex;
   align-items: center;
   gap:20px;
-  z-index: 1000;
+  z-index: 1;
 }
 
 /* Contacts page ------------------------ vvv ---*/
@@ -87,6 +87,10 @@ body, html {
   gap:40px;
   justify-content: space-evenly;
   background-image: url("/src/images/day-section.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover; /* Ensure the entire background image is visible while maintaining proportions */
+  background-position: center;
   overflow: hidden;
 }
 
@@ -249,7 +253,7 @@ body, html {
 }
 .detailsContainer img{
   width: 300px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .detailsContainer{
   display: flex;
@@ -425,13 +429,12 @@ body, html {
     height: 25px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
     background: linear-gradient(to top, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
-
   }
 
   .secInfo{
     height: 80vh;
     background-color:  rgba(255, 255, 255, 0.3); 
-    border-radius: 10px; 
+    border-radius: 12px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin:50px 50px 50px 50px;
     display:flex;
@@ -443,11 +446,11 @@ body, html {
   display:flex;
   flex-direction: column;
   align-items: center;
-  width: 200px;
+  width: 300px;
  }
  .factText{
     text-align: center;
-    
+    font-style: italic;
  }
   
   
@@ -711,3 +714,14 @@ padding: 20px;
   opacity: 0;
 }
 
+.cardOfDay{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.dayFact h1{
+  font-size: 36px;
+}

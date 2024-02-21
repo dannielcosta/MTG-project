@@ -37,7 +37,7 @@ function CardDayDetail() {
     <div className="cardOfDay">
       {card && (
         <>
-          <h1>{card.name}</h1>
+          <h1>Card Of The Day</h1>
           <div className="detailsContainer">
           <Link to={`/cards/${card.id}`}> 
             <img src={card.image_uris?.normal} alt={card.name} />
