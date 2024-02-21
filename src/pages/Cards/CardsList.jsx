@@ -43,9 +43,6 @@ function CardsList() {
                     </div>
                     
                 </div>
-
-
-
     );
 }
 

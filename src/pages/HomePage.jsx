@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
 import CardOfDay from '../components/CardDayDetail'
-import FactOfDay from '../components/FactDayDetail'
+import FactDayDetail from '../components/FactDayDetail'
 
 function HomePage() {
   return (
@@ -26,14 +26,12 @@ function HomePage() {
         <div className="divWallpaper">
           <div className="overlay">
             <div className="secInfo">
-              <CardOfDay />
-              <Link to="/" className="btn">
-                Card Details
-              </Link>
-              <FactOfDay />
-              <Link to="/facts" className="btn">
-                More Fun Facts
-              </Link>
+              <div className="dayCard">
+                <CardOfDay />
+              </div>
+              <div className="dayFact">
+                <FactDayDetail />
+              </div>
             </div>
           </div>
         </div>

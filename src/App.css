@@ -230,6 +230,7 @@ body, html {
 .cardDetailsPage img{
   height: 400px;
   border-radius: 13px;
+
 }
 .cardDetailsPageText {
   background-image: url("images/paper.png");
@@ -245,6 +246,10 @@ body, html {
   flex-direction: column;
   color: black;
   
+}
+.detailsContainer img{
+  width: 300px;
+  border-radius: 10px;
 }
 .detailsContainer{
   display: flex;
@@ -424,17 +429,26 @@ body, html {
   }
 
   .secInfo{
-    width: 80vw;
     height: 80vh;
     background-color:  rgba(255, 255, 255, 0.3); 
     border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding-left: 160px;
-    padding-top:160px;
     margin:50px 50px 50px 50px;
-
-
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
+
+ .dayFact{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+ }
+ .factText{
+    text-align: center;
+    
+ }
   
   
   .mainSection {

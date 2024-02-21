@@ -1,5 +1,6 @@
 import React from 'react';
 import JSON_SERVER_LINK from '../data/funfact-api.json';
+import { Link } from 'react-router-dom';
 
 function FactDayDetail() {
   const facts = JSON_SERVER_LINK.facts; 
@@ -10,11 +11,14 @@ function FactDayDetail() {
   const factToShow = facts[factIndex];
 
   return (
-    <div>
+    <div className='dayFact'>
       <h1>Today's Fact</h1>
-      <div>
+      <div className='factText'>
         <h3>{factToShow.fact}</h3>
       </div>
+      <Link to="/facts" className="btn">
+                More Fun Facts
+      </Link>
     </div>
   );
 }

@@ -1,41 +1,52 @@
-import React from 'react'
-import { useEffect, useState } from 'react'
-import axios from 'axios'
-import APIURL from '../data/mtg-api'
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import APIURL from "../data/mtg-api";
+import { Link } from "react-router-dom";
 
-const API = APIURL()
+const API = APIURL();
 
 function CardDayDetail() {
+  const [cards, setCards] = useState([]);
+  const [card, setCard] = useState(null);
 
-  const [cards, setCards] = useState([])
-  const [card, setCard] = useState([])
-
-  useEffect(()=>{
+  useEffect(() => {
     axios
-    .get(`${API}/search?q=c`)
-    .then((response)=>{
-/*       console.log(response.data.data) */
-      setCards(response.data)
+      .get(`${API}/search?q=c`)
+      .then((response) => {
+        setCards(response.data.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
+  useEffect(() => {
+    if (cards.length > 0) {
       const currentDate = new Date();
       const dayOfMonth = currentDate.getDate();
       const cardIndex = dayOfMonth % cards.length;
       setCard(cards[cardIndex]);
-    })
-    .catch((error)=>{console.log(error)})
-  },[])
+    }
+  }, [cards]);
 
-  console.log(card)
-  
+  useEffect(() => {
+    console.log(card);
+  }, [card]);
+
   return (
-    <div></div>
- /*    <div className='cardDetailsPage'>
-      <h1>{card.name}</h1>
-      <div className='detailsContainer'>
-        <img src={card.image_uris?.normal} alt={card.name} />
-      </div>
-    </div> */
+    <div className="cardOfDay">
+      {card && (
+        <>
+          <h1>{card.name}</h1>
+          <div className="detailsContainer">
+          <Link to={`/cards/${card.id}`}> 
+            <img src={card.image_uris?.normal} alt={card.name} />
+            </Link>
+          </div>
+        </>
+      )}
+    </div>
   );
-
 }
-export default CardDayDetail
 
+export default CardDayDetail;
