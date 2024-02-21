@@ -10,8 +10,6 @@ function Navbar() {
         <NavLink to="/cards" className="navlink">Cards List</NavLink>
         <NavLink to="/create-your-card/" className="navlink">Create Your Card</NavLink>
         <NavLink to="/facts" className="navlink">Fun Facts</NavLink>
-        <NavLink to="/about" className="navlink">About</NavLink>
-        <NavLink to="/contacts" className="navlink">Contacts</NavLink>
     </div>
   )
 }

@@ -5,28 +5,27 @@ import { Link } from "react-router-dom";
 function Artifact() {
   return (
     <section className="Colors">
-
+      <div className="Buttons-Logo">
       {/* ------------------------------------- BUTTON TO CHANGE PAGE AND COLOR IMAGE   <- / ->   -------------------------------------------------- */}
       <Link to="/about/white">
-      <div class="container">
-  <button class="aboutPgBtnLeft">Button Left</button>
-  <span class="arrow first">
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-    </svg>
-  </span>
-  <span class="arrow second">
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-    </svg>
-  </span>
-  <span class="arrow third">
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-    </svg>
-  </span>
-</div>
-
+        <div class="container">
+          <button class="about-pageBtnLeft">Previews Class</button>
+          <span class="arrowLeft first">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+          </span>
+          <span class="arrowLeft second">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+          </span>
+          <span class="arrowLeft third">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+          </span>
+        </div>
       </Link>
 
       <div>
@@ -34,29 +33,29 @@ function Artifact() {
       </div>
 
       <Link to="/about/black">
-      <div class="container">
-  <button class="aboutPgBtnLeft">Button Left</button>
-  <span class="arrow first">
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-    </svg>
-  </span>
-  <span class="arrow second">
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-    </svg>
-  </span>
-  <span class="arrow third">
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-    </svg>
-  </span>
-</div>      </Link>
-
+        <div class="container">
+          <button class="about-pageBtnRight">Next Class</button>
+          <span class="arrowRight first">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+          </span>
+          <span class="arrowRight second">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+          </span>
+          <span class="arrowRight third">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+          </span>
+        </div>
+        
+      </Link>
+      </div>
 
       {/*   ------------------------------------- ABOUT SECTION      -------------------------------------------------- */}
-
-
 
       <div>
         <strong>About Artifacts </strong>
@@ -131,6 +130,12 @@ function Artifact() {
         level with artifacts, with almost all of those cards coming in
         "artifacts matter" sets.
       </div>
+      {/*   ------------------------------------- BACK BUTTON      -------------------------------------------------- */}
+      <Link to="/about">
+        <div class="container">
+          <button class="backButton">Back</button>
+        </div>
+      </Link>
     </section>
   );
 }

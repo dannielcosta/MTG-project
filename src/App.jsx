@@ -28,6 +28,7 @@ import Blue from './pages/Colors/Blue';
 import Green from './pages/Colors/Green';
 import Red from './pages/Colors/Red';
 import White from './pages/Colors/White';
+import PlayRules from './pages/About-Contacts/PlayRules'
 
 function App() {
 
@@ -54,6 +55,7 @@ function App() {
         <Route path='/about/green' element={<Green/>}></Route>
         <Route path='/about/red' element={<Red/>}></Route>
         <Route path='/about/white' element={<White/>}></Route>
+        <Route path='/about/how-to-play' element={<PlayRules/>}></Route>
 
         {/* Fallback page */}
         <Route path='*' element={<Error/>}/>

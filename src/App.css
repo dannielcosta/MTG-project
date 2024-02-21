@@ -66,9 +66,11 @@ body, html {
   padding: 0; 
   display:flex;
   align-items: center;
-  gap:12px;
+  gap:20px;
   z-index: 1000;
 }
+
+/* Contacts page ------------------------ vvv ---*/
 
 .about-li , .about-gh {
   height:20px;
@@ -79,18 +81,27 @@ body, html {
 
 .Developers{
   display:flex;
+  padding-top: 200px;
   flex-direction: row;
+  height: 100vh;
   gap:40px;
   justify-content: space-evenly;
+  background-image: url("/src/images/day-section.jpg");
+  overflow: hidden;
 }
 
 .dev1 , .dev2{
   display:flex;
-  background-image: url("/src/images/custom-card.png");
   flex-direction: column;
   background-size: cover;
   width: 320px;
   height: 450px;
+}
+.dev1{
+  background-image: url("/src/images/custom-card-daniel.png");
+}
+.dev2{
+  background-image: url("/src/images/custom-card-filipe.png");
 }
 .devName{
   padding-left: 40px ;
@@ -99,9 +110,38 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 13px;
+  padding-top: 9px;
   padding-right: 25px;
 }
+.devType{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 175px;
+  font-weight: bold;
+
+}
+.devType img{
+  width: 30px;
+  height: 30px;
+}
+.fullStackDesc{
+  display: flex;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  margin-top: 0px;
+}
+.fullStack p{
+  padding-left: 40px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+/* Contacts page ------------------------ ^^^ ---*/
+
+
 
 .navlink{
   background-color: black;
@@ -415,8 +455,16 @@ body, html {
   }
   
 /* Apenas para mostrar   vvv */
-  .createCard, .Developers, .Facts, .ver{
+  .createCard, .Facts, .ver, .PlayRules{
     margin-top: 200px;
+  }
+
+  .PlayRules{
+    padding: 20px;
+  }
+  .PlayRules img{
+    width:500px;
+    height:550px;
   }
 
 
@@ -540,6 +588,17 @@ padding: 20px;
 
 /* --------------------- ABOUT COLORS PAGE BUTTON LEFT --------------------------- */
 
+/* Buttons-Logo has the previews, logo and next class buttons */
+.Buttons-Logo{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  width:1400px;
+}
+
+
 .container {
   display: flex;
   position: relative;
@@ -557,7 +616,7 @@ padding: 20px;
   transition: all .3s ease;
 }
 
-.arrow {
+.arrowLeft {
   fill: #94a1b2;
   position: absolute;
   pointer-events: none;
@@ -566,6 +625,16 @@ padding: 20px;
   top: 25%;
   transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transform: rotate(180deg); /* Rotate the arrow */
+}
+
+.arrowRight {
+  fill: #94a1b2;
+  position: absolute;
+  pointer-events: none;
+  width: 24px;
+  right: 0;
+  top: 25%;
+  transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .about-pageBtnLeft:hover {
@@ -588,3 +657,43 @@ padding: 20px;
 .third {
   opacity: 0;
 }
+
+
+/* --------------------- ABOUT COLORS - BACK BUTTON --------------------------- */
+
+.backButton {
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  padding: .5em 1.5em;
+  font-size: 20px;
+  font-weight: 600;
+  color: #7f5af0;
+  transition: all .3s ease;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backButton:hover {
+  letter-spacing: 2px;
+}
+
+.backButton:hover ~ .second {
+  opacity: .66;
+  right: -20px;
+  transition-delay: 50ms;
+}
+
+.backButton:hover ~ .third {
+  opacity: .33;
+  right: -40px;
+  transition-delay: 100ms;
+}
+
+.second, 
+.third {
+  opacity: 0;
+}
+

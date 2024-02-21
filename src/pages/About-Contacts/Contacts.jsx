@@ -18,6 +18,23 @@ function Contacts() {
                             <a href="https://www.linkedin.com/in/daniel-costa-144924153/"><img className="about-li" src={`${LIlogo}`}></img></a>
                         </div>
                     </section>
+                    <section className='devType'>
+                        <p>Developer - God Mode</p>
+                        <img src={"src/images/logo.png"}/>
+                    </section>
+                    <section className='fullStack'>
+                        <p>Full-Stack Web Developer</p>
+                        <div className='fullStackDesc'>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                            <ul>
+                                <li>Javascript (ES6)</li>
+                                <li>React</li>
+                            </ul>
+                        </div>
+                    </section>
                 </div>
 
                 <div className="dev2">
@@ -28,6 +45,23 @@ function Contacts() {
                         <div className="Links">
                             <a href="https://github.com/FilipeTeixeira09"><img className="about-gh" src={`${GHlogo}`}></img></a>
                             <a href="https://www.linkedin.com/in/filipe-teixeira-full-stack-developer/"><img className="about-li" src={`${LIlogo}`}></img></a>
+                        </div>
+                    </section>
+                    <section className='devType'>
+                        <p>Developer - God Mode</p>
+                        <img src={"src/images/logo.png"}/>
+                    </section>
+                    <section className='fullStack'>
+                        <p>Full-Stack Web Developer</p>
+                        <div className='fullStackDesc'>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                            <ul>
+                                <li>Javascript (ES6)</li>
+                                <li>React</li>
+                            </ul>
                         </div>
                     </section>
                 </div>
