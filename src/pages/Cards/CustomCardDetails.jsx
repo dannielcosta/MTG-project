@@ -39,6 +39,7 @@ function CustomCardDetails() {
   return (
     <div className="ver">
         <h1>{card.name}</h1>
+        <img src={card.imageURL}/>
         <Link to={`/custom-card-edit/${cardId}`}>
             <button>Edit Card</button>
         </Link>

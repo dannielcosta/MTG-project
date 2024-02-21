@@ -4,7 +4,7 @@ import axios from "axios";
 import JSON_SERVER_LINK from "../../data/json-backend-cards-created";
 import { useNavigate } from "react-router-dom";
 
-const OPEN_API_KEY = "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";
+const OPEN_API_KEY = "YOUR_AI_KEY";
 
 function CardCreate() {
   const [name, setName] = useState("");

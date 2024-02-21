@@ -10,9 +10,9 @@ function HomePage() {
       <section className="mainSection">
         <div>
           <Link to={'/cards'}>
-            <button class="btn-31">
-              <span class="text-container">
-                <span class="text">Cards List</span>
+            <button className="btn-31">
+              <span className="text-container">
+                <span className="text">Cards List</span>
               </span>
             </button>
           </Link>
@@ -25,15 +25,20 @@ function HomePage() {
       <section className="sectionDay">
         <div className="divWallpaper">
           <div className="overlay">
-            <div className='secInfo'>
-          <CardOfDay />
-          <Link to="/"><button>Card Details</button></Link>
-          <FactOfDay />
-          <Link to="/facts"><button>More Fun Facts</button></Link>
-          </div>
+            <div className="secInfo">
+              <CardOfDay />
+              <Link to="/" className="btn">
+                Card Details
+              </Link>
+              <FactOfDay />
+              <Link to="/facts" className="btn">
+                More Fun Facts
+              </Link>
+            </div>
           </div>
         </div>
       </section>
+
 
       <Footer />
     </main>

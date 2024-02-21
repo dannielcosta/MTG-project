@@ -1,7 +1,7 @@
 import React from 'react'
 
 function JSON_SERVER_LINK() {
-  const JSON_LINK = "http://localhost:3001/cards"
+  const JSON_LINK = "https://json-server-mtg-backend.onrender.com/cards"
   return JSON_LINK
 }
 
