@@ -161,8 +161,14 @@ function About() {
         </div>
       
       </div>
-      <section className="BlackBar"></section>
-
+      <section className="BlackBar"> </section>
+      <Link to={'/'}>
+            <button className="btn-31">
+              <span className="text-container">
+                <span className="text">Back</span>
+              </span>
+            </button>
+          </Link>
   
       
     </section>

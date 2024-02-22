@@ -96,6 +96,14 @@ function CardsList() {
                     <p>No cards found.</p>
                 )}
             </div>
+            
+            <Link to={'/'}>
+            <button className="btn-31">
+              <span className="text-container">
+                <span className="text">Back</span>
+              </span>
+            </button>
+          </Link>
         </div>
     );
 }

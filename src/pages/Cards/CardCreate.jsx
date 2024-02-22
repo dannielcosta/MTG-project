@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import JSON_SERVER_LINK from "../../data/json-backend-cards-created";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link} from "react-router-dom";
 
 
 function CardCreate() {
@@ -246,6 +246,13 @@ function CardCreate() {
         )}
         <button type="submit">Submit</button>
       </form>
+      <Link to={'/'}>
+            <button className="btn-31">
+              <span className="text-container">
+                <span className="text">Back</span>
+              </span>
+            </button>
+          </Link>
     </div>
   );
 }

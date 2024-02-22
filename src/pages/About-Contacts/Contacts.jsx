@@ -2,10 +2,11 @@ import React from 'react'
 import GHlogo from '../../images/github-logo.png'
 import LIlogo from '../../images/LinkedIn-logo.png'
 import CustomCard from '../../images/custom-card.png'
+import { Link } from 'react-router-dom'
 
 function Contacts() {
   return (
- 
+ <section>
          <div className="Developers">
                 
                 <div className="dev1">
@@ -65,8 +66,18 @@ function Contacts() {
                         </div>
                     </section>
                 </div>
-
-    </div>
+               
+        </div>
+        
+             <Link to={'/'}>
+            <button className="btn-31">
+              <span className="text-container">
+                <span className="text">Back</span>
+              </span>
+            </button>
+          </Link>
+        
+        </section>
   )
 }
 
