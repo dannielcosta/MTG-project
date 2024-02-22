@@ -4,7 +4,6 @@ import axios from "axios";
 import JSON_SERVER_LINK from "../../data/json-backend-cards-created";
 import { useNavigate } from "react-router-dom";
 
-const OPEN_API_KEY = "OPEN_AI_KEY";
 
 function CardCreate() {
   const [name, setName] = useState("");
@@ -24,6 +23,7 @@ function CardCreate() {
   const [imageURL, setImageURL] = useState("")
 
   async function generateImages() {
+    console.log(import.meta.env.VITE_API_KEY)
     setIsLoading(true);
 
     try {
@@ -35,7 +35,7 @@ function CardCreate() {
 
       const headers = {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${OPEN_API_KEY}`,
+        Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`,
       };
 
       const response = await axios.post(
