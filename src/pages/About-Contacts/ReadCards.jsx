@@ -3,10 +3,14 @@ import ReadTheCards from "../../images/ReadCards.png";
 
 function ReadCards() {
   return (
-    <section className="PlayRules">
-      <div>
-        <div>
-          <h3>How to read the card</h3>
+    <section>
+      <div className="HowtoRead">
+
+          <section className="title">
+            <h3>How to read the card</h3>
+          </section>
+          
+          <div className="PlayRules">
           <img src={`${ReadTheCards}`} alt="Card Instructions" />
           <div className="Instructions">
             <ol>

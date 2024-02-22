@@ -170,6 +170,11 @@ body, html {
   margin-bottom: 100px;
   color: white;
 }
+.lists{
+  text-align: center;
+  margin-top: 50px;
+  height: 100px;
+}
 
 .sectionDay{
   width: 100vw;
@@ -179,7 +184,9 @@ body, html {
 .cardsListPage{
   margin-top: 160px;
   margin-left: 60px;
-
+}
+.cardsListPage h1{
+  text-align: center;
 }
 
 .Footer{
@@ -231,6 +238,11 @@ body, html {
   display:flex;
   flex-direction: row;
   gap:40px;
+}
+.cardsDisplay{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .cardsDisplay img{
   width: 250px;
@@ -873,10 +885,10 @@ padding: 20px;
   gap:40px
 }
 
-.TypesCards{
+/* .TypesCards{
   margin-top: 250px;
   padding:50px;
-}
+} */
 
 .cardsFilters{
   gap:40px;
@@ -890,8 +902,59 @@ padding: 20px;
   width:90px;
   height: 40px;
   padding: 0;
+
 }
 
 .cardsFilters text{
   text-align: center;
 }
+
+.How-to-play{
+  padding-top: 160px;
+  padding-bottom: 50px;
+  background-image:url('/src/images/how-to-play.png');
+  width: 100vw;
+/*   height: 100vh; */
+  background-size: cover; 
+  background-position: center;
+}
+
+.TypesCards{
+  padding-top: 160px;
+  padding-bottom: 50px;
+  background-image:url('/src/images/types-of-cards.png');
+  width: 100vw;
+ height: 100vh;
+  background-size: cover; /* Ensure the entire background image is visible while maintaining proportions */
+  background-position: center;
+  overflow: hidden;
+/*   background-size: cover; 
+  background-position: center; */
+}
+.HowtoRead{
+  background-image:url('/src/images/how-to-read-cards.png');
+  width: 100vw;
+  background-size: cover; /* Ensure the entire background image is visible while maintaining proportions */
+  background-position: center;
+}
+
+.PlayRules{
+  padding-top: 80px;
+  padding-bottom: 50px;
+  
+  display:flex;
+  flex-direction: row;
+}
+
+.PlayRules img{
+  width:400px;
+  height:400px;
+}
+
+.title {
+  display:flex;
+  justify-content: center;
+  padding-top: 160px;
+}
+
+

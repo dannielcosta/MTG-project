@@ -2,9 +2,9 @@ import React from 'react'
 
 function TypesCards() {
   return (
-    <section className="About">
+    <section>
         <div className="TypesCards">
-        <div className="overlay">
+        
     <div class="spell">
     <h2>What’s a Spell:</h2>
     <p>
@@ -182,7 +182,6 @@ function TypesCards() {
       lands produce mana of different colors, the lands themselves don't
       have a color.
     </p>
-  </div>
   </div>
   </div>
   </section>

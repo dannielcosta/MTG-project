@@ -26,9 +26,9 @@ function CardsList() {
             setFilteredCards(cards);
         } else {
             if (color.length === 0) {
-                setFilteredCards(cards.filter(card => !card.colors || card.colors_identity.length === 0));
+                setFilteredCards(cards.filter(card => !card.colors || card.color_identity.length === 0));
             } else {
-                setFilteredCards(cards.filter(card => card.colors_identity?.includes(color)));
+                setFilteredCards(cards.filter(card => card.color_identity?.includes(color)));
             }
         }
     };
@@ -42,11 +42,14 @@ function CardsList() {
             <h1>Cards List</h1>
             <section className="lists">
                 <Link to="/custom-cards">
-                    <p>Custom Cards List</p>
+                    <button className="btn-31">
+                        <span className="text-container">
+                            <span className="text">Custom Cards List</span>
+                        </span>
+                    </button>
                 </Link>
             </section>
             <section className="cardsFilters">
-                <p>Filter by Color:</p>
                 <button className="btn-31" onClick={() => handleFilterClick('All')}>
                     <span className="text-container">
                         <span className="text">All</span>
