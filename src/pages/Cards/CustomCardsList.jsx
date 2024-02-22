@@ -33,36 +33,45 @@ function CustomCardsList() {
         </Link>
       </section>
       <div className="cardsDisplay">
-      {cards.length > 0 &&
-  cards.map((card) => (
-    <div className="custom-card" key={card.id}>
-      <section className="header-custom">
-        <p className=""><b>{card.name}</b></p>
-        <section className="header-custom-mana">
-          <p>{card.mana}</p>
+        {cards.length > 0 &&
+          cards.map((card) => (
+            <div className="newCArdContainer">
+              <div className="custom-card" key={card.id}>
+                <section className="header-custom">
+                  <p className="">
+                    <b>{card.name}</b>
+                  </p>
+                  <section className="header-custom-mana">
+                    <p>{card.mana}</p>
 
-          {card.elements.length > 0 && card.elements.map((element, index) => (
-            <img
-              className="elements-color"
-              key={index}
-              src={`src/images/mtg-colors/${element}.png`}
-              alt={element}
-            />
+                    {card.elements.length > 0 &&
+                      card.elements.map((element, index) => (
+                        <img
+                          className="elements-color"
+                          key={index}
+                          src={`src/images/mtg-colors/${element}.png`}
+                          alt={element}
+                        />
+                      ))}
+                  </section>
+                </section>
+                <Link to={`/custom-cards/${card.id}`}>
+                  <img src={card.imageURL} alt={card.name} />
+                </Link>
+                <p className="custom-card-type">
+                  <b>{card.type}</b>
+                </p>
+                <section className="custom-card-details">
+                  <section className="custom-card-abilities">
+                    <p>
+                      <b>{card.mainAb}</b>
+                    </p>
+                    <p>{card.combatAb}</p>
+                  </section>
+                </section>
+              </div>
+            </div>
           ))}
-        </section>
-      </section>
-      <Link to={`/custom-cards/${card.id}`}>
-        <img src={card.imageURL} alt={card.name} />
-      </Link>
-      <p className="custom-card-type"><b>{card.type}</b></p>
-      <section className="custom-card-details">
-        <section className="custom-card-abilities">
-          <p><b>{card.mainAb}</b></p>
-          <p>{card.combatAb}</p>
-        </section>
-      </section>
-    </div>
-  ))}
       </div>
     </div>
   );
