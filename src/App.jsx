@@ -12,6 +12,8 @@ import Error from './pages/Error'
 import About from './pages/About-Contacts/About';
 import Contacts from './pages/About-Contacts/Contacts';
 import FactsPage from './pages/About-Contacts/FactsPage';
+import TypesCards from './pages/About-Contacts/TypesCards';
+import HowToPlay from './pages/About-Contacts/HowToPlay';
 
 // Cards Pages
 import CardsList from './pages/Cards/CardsList';
@@ -28,7 +30,7 @@ import Blue from './pages/Colors/Blue';
 import Green from './pages/Colors/Green';
 import Red from './pages/Colors/Red';
 import White from './pages/Colors/White';
-import PlayRules from './pages/About-Contacts/PlayRules'
+import ReadCards from './pages/About-Contacts/ReadCards'
 
 function App() {
 
@@ -55,7 +57,10 @@ function App() {
         <Route path='/about/green' element={<Green/>}></Route>
         <Route path='/about/red' element={<Red/>}></Route>
         <Route path='/about/white' element={<White/>}></Route>
-        <Route path='/about/how-to-play' element={<PlayRules/>}></Route>
+        <Route path='/about/understand-cards' element={<ReadCards/>}></Route>
+        <Route path='/about/types-of-cards' element={<TypesCards/>}></Route>
+        <Route path='/about/how-to-play' element={<HowToPlay/>}></Route>
+
 
         {/* Fallback page */}
         <Route path='*' element={<Error/>}/>
