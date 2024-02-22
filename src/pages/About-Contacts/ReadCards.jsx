@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 function ReadCards() {
   return (
     <section>
-      <div className="HowtoRead">
+      <div className="Colors">
 
           <section className="title">
             <h3>How to read the card</h3>

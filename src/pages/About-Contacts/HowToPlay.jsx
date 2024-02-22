@@ -11,7 +11,7 @@ import BoardTable from "../../images/GameBoard.png"
 
 function HowToPlay() {
   return (
-    <section className="How-to-play">
+    <section className="Colors">
       <div class="game-actions">
         <h2>GAME ACTIONS</h2>
         <p>

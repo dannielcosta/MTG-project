@@ -597,26 +597,32 @@ html {
   flex-direction: row;
 }
 
-.Colors {
-  padding: 160px 150px 50px 150px;
-  display: flex;
+.Colors{
+  padding:160px 150px 50px 150px;
+  display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(37, 36, 52);
-  color: white;
-  gap: 50px;
-}
+  background-color: rgb(37,36,52);
+  color:white;
+  gap:50px
+  }
 
-.About {
-  background-image: url("images/backgrounds/about-background.png");
+  .Colors h1, h2, h3, h4, h5{
+    color:rgb(244,182,63);
+    text-align: center;
+  }
+
+
+.About{
+  background-image: url('images/backgrounds/about-background.png');
   margin-top: 100px;
-  display: flex;
+  display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 160px 50px 50px 50px;
-  gap: 30px;
+  padding:160px 50px 50px 50px;
+  gap:30px;
 }
 
 .Allies {
@@ -961,17 +967,15 @@ html {
   background-position: center;
 }
 
-.TypesCards {
-  background-image: url("/src/images/types-of-cards.png");
-  padding-bottom: 50px;
-  width: 100vw;
-  height: 100vh;
-  background-size: cover; /* Ensure the entire background image is visible while maintaining proportions */
-  background-position: center;
-  overflow: hidden;
-
-  /*   background-size: cover; 
-  background-position: center; */
+.TypesCards{
+  background-image:url('/src/images/types-of-cards.png');
+  margin-top: 100px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:0px 50px 50px 50px;
+  gap:30px;
 }
 .HowtoRead {
   background-image: url("/src/images/how-to-read-cards.png");

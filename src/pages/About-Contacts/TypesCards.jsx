@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import MultiCards from '../../images/multipleCards.png'
+import Lands from '../../images/lands.png'
 
 function TypesCards() {
   return (
@@ -185,6 +186,7 @@ function TypesCards() {
       have a color.
     </p>
   </div>
+  <img src={`${Lands}`} className="typeCardsImg"/>
   </div>
   <div className="ButtonCentered">
   <Link to={'/about'}>
