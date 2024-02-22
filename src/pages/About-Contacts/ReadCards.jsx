@@ -1,5 +1,7 @@
 import React from "react";
 import ReadTheCards from "../../images/ReadCards.png";
+import {Link} from 'react-router-dom'
+
 
 function ReadCards() {
   return (
@@ -69,6 +71,13 @@ function ReadCards() {
             </ol>
           </div>
         </div>
+        <Link to={'/about'}>
+            <button className="btn-31">
+              <span className="text-container">
+                <span className="text">Back</span>
+              </span>
+            </button>
+          </Link>
         </div>
     </section>
   );

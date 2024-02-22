@@ -1,42 +1,134 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import manaPay from "../../images/mana-pay.png"
+import attack from "../../images/attack.png"
+import attackDef from "../../images/attack-def.png"
+import attackDef1 from "../../images/attack-def-1.png"
+import def from "../../images/def.png"
+import mulAttack from "../../images/mul-attack.png"
+import BoardTable from "../../images/GameBoard.png"
+
 
 function HowToPlay() {
-    return (
-        <section className="How-to-play">
-            <div class="game-actions">
-                <h2>GAME ACTIONS</h2>
-                <p>This segment outlines the activities you'll engage in during a game, encompassing tapping your cards, invoking spells, and engaging in combat with creatures.</p>
-            </div>
+  return (
+    <section className="How-to-play">
+      <div class="game-actions">
+        <h2>GAME ACTIONS</h2>
+        <p>
+          This segment outlines the activities you'll engage in during a game,
+          encompassing tapping your cards, invoking spells, and engaging in
+          combat with creatures.
+        </p>
+      <div className="howToPlayIntro">
+        <img src={`${manaPay}`} className="howToPlayIMG3" />
+        <img src={`${BoardTable}`} className="howToPlayIMG4" />
+        </div>
+      </div>
 
-            <div class="tapping-and-untapping">
-                <h2>TAPPING AND UNTAPPING</h2>
-                <p>To tap a card is to rotate it sideways, indicating its utilization for the current turn. This occurs when you utilize a land to generate mana, when you initiate an attack with a creature, or when you activate an ability requiring the tap symbol (depicted as ). Once tapped, a permanent cannot be tapped again until it's untapped (rotated back upright). At the commencement of your turn, untap all tapped cards for subsequent use.</p>
-            </div>
+      <div class="tapping-and-untapping">
+        <h2>TAPPING AND UNTAPPING</h2>
+        <p>
+          Tapping a card involves rotating it sideways to indicate its use for
+          the turn. This action is performed when you utilize a land to generate
+          mana, when you initiate an attack with a creature, or when you
+          activate an ability requiring the tapping symbol (the symbol typically
+          indicating "tap this permanent"). Once a permanent is tapped, it
+          cannot be tapped again until it's untapped, returning it to its
+          upright position. At the start of your turn, untap any tapped cards,
+          allowing you to utilize them once more.
+        </p>
+      </div>
 
-            <div class="casting-spells">
-                <h2>CASTING SPELLS</h2>
-                <p>To cast a spell, you must fulfill its mana cost (displayed in the upper right corner of the card) by tapping lands (or other permanents) to generate the requisite amount and type of mana. For instance, if casting Serra Angel, with a mana cost of , you may tap three basic lands of any kind to meet  plus two Plains to meet . Once a spell is cast, one of two outcomes arises. If the spell is an instant or a sorcery, execute the instructions on the card and subsequently place it into your graveyard. Conversely, if the spell is a creature, artifact, or enchantment, place the card on the table in front of you, signifying its presence on the battlefield. Cards present on the battlefield are denoted as permanents to distinguish them from instants and sorceries, which never enter this zone.</p>
-            </div>
+      <div class="casting-spells">
+        <h2>CASTING SPELLS</h2>
+        <p>
+          When you want to cast a spell, you need to pay its mana cost, which
+          you can do by tapping lands or other permanents to generate the
+          required type and amount of mana. Once the spell is cast, it either
+          resolves immediately if it's an instant or sorcery, and then goes to
+          the graveyard, or if it's a creature, artifact, or enchantment, it
+          stays on the battlefield in front of you. Permanents on the
+          battlefield are different from instants and sorceries, which don't
+          stay there.{" "}
+        </p>
+      </div>
 
-            <div class="attacking-and-blocking">
-                <h2>ATTACKING AND BLOCKING</h2>
-                <p>The primary method to secure victory in the game involves launching attacks with your creatures. Should an attacking creature go unblocked by an opponent, it inflicts damage equivalent to its power upon said opponent.</p>
-{/*                 <!-- Other paragraphs for attacking and blocking... -->
- */}            </div>
+      <div class="attacking-and-blocking">
+        <h2>ATTACKING AND BLOCKING</h2>
+        <p>
+          The main way to win in the game is by attacking with your creatures.
+          When your creature attacks an opponent and isn't blocked, it deals
+          damage equal to its power to that opponent. During the combat phase,
+          which is in the middle of each turn, you choose which of your
+          creatures will attack and which opponent they will attack. Tap your
+          attacking creatures to indicate they're attacking. Then, your
+          opponents decide which, if any, of their creatures will block. Tapped
+          creatures can't block. Once blockers are chosen, all creatures
+          involved deal damage simultaneously based on their power. If an
+          attacking creature isn't blocked, it damages the player it's
+          attacking. If it's blocked, it damages the blocking creature, and vice
+          versa. Damage dealt to a player reduces their life total. If your
+          attacking creature is blocked by multiple creatures, you decide how to
+          distribute its damage among them, ensuring enough to destroy each
+          blocking creature before moving to the next. If a creature receives
+          damage equal to or greater than its toughness in one turn, it's
+          destroyed and goes to the graveyard. Otherwise, it remains on the
+          battlefield, with damage wearing off at the end of the turn.
+        </p>
+        <div className="gameEx">
+        <img src={`${attack}`} className="howToPlayIMG1" />
+        <img src={`${def}`} className="howToPlayIMG2" />
+        </div>
+      </div>
 
-            <div class="advanced-topics">
-                <h2>ADVANCED TOPICS</h2>
-                <p>One of the most captivating aspects of the Magic game lies in the plethora of distinct cards available, each offering a wide spectrum of possibilities within any given match. This section serves as a resource for delving deeper into the intricacies of Magic's rules.</p>
-{/*                 <!-- Other paragraphs for advanced topics... -->
- */}            </div>
+      <div class="advanced-topics">
+        <h2>ADVANCED TOPICS</h2>
+        <p>
+          Magic: The Gathering offers an exciting experience due to its vast
+          array of cards, each offering unique abilities and interactions. This
+          diversity ensures that every game can bring about a multitude of
+          outcomes and surprises. If you ever need more information about the
+          game's rules, this section serves as a handy reference guide.
+        </p>
+      </div>
 
-            <div class="parts-of-the-turn">
-                <h2>PARTS OF THE TURN</h2>
-                <p>Every turn unfolds in a consistent sequence. Upon entering a new step or phase, any triggered abilities associated with that step or phase are activated and placed on the stack. The active player (i.e., the player whose turn it is) commences by casting spells and activating abilities, followed by each subsequent player in turn order. Once all players opt not to take further actions and the stack is devoid of pending resolutions, the game proceeds to the subsequent step.</p>
-{/*                 <!-- Other paragraphs for parts of the turn... -->
- */}            </div>
-        </section>
-    )
+      <div class="parts-of-the-turn">
+        <h2>TARGETING</h2>
+        <p>
+          In Magic, some spells and abilities have the word "target," indicating
+          what they affect. You must select all targets for a spell when you
+          cast it or for an ability when it activates. If you can't meet the
+          targeting requirements (like if there are no creatures on the
+          battlefield for a spell that says "Destroy target creature"), you
+          can't use that spell or ability. For spells that "deal damage to any
+          target," you can choose any creature, player, or planeswalker as the
+          target. Once you've chosen targets, you can't change your mind. When
+          the spell or ability resolves, it checks if the targets are still
+          legal. If not, it has no effect. If none of the targets are legal, the
+          spell or ability does nothing.
+        </p>
+      </div>
+      <div className="turn-description">
+        <h2>PARTS OF THE TURN</h2>
+        <p>
+          Each turn proceeds in the same sequence. Whenever you enter a new step
+          or phase, any triggered abilities that happen during that step or
+          phase trigger and are put on the stack. The active player (the player
+          whose turn it is) gets to start casting spells and activating
+          abilities, then each other player in turn order will too. When all
+          players decline to do anything more and nothing is on the stack
+          waiting to resolve, the game will move to the next step.
+        </p>
+      </div>
+      <Link to={"/about"}>
+        <button className="btn-31">
+          <span className="text-container">
+            <span className="text">Back</span>
+          </span>
+        </button>
+      </Link>
+    </section>
+  );
 }
 
-export default HowToPlay
+export default HowToPlay;

@@ -182,11 +182,19 @@ body, html {
   background-color: lightcoral;
 }
 .cardsListPage{
-  margin-top: 160px;
-  margin-left: 60px;
+  background-image: url('/src/images/cards-list-bg.png');
+  padding-top: 160px;
+  padding-bottom: 50px;
+  width: 100vw;
+  background-size: cover;
+  /* background-position: fixed; */
+  background-repeat: repeat-y;
+  
 }
+
 .cardsListPage h1{
   text-align: center;
+  color: white;
 }
 
 .Footer{
@@ -240,14 +248,21 @@ body, html {
   gap:40px;
 }
 .cardsDisplay{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-right: 20px;
+  
   justify-content: center;
 }
 .cardsDisplay img{
   width: 250px;
   border-radius: 15px;
   margin: 10px;
+}
+.cardsDisplay a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cardDetailsPage img{
@@ -443,6 +458,13 @@ body, html {
     height: 100%;
     background-color: rgba(174, 174, 174, 0.7); /* Adjust the last value (alpha) to control the opacity */
   }
+  .overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(174, 174, 174, 0.7); /* Adjust the last value (alpha) to control the opacity */
+  }
 
   .WhiteBar{
     height: 25px;
@@ -500,7 +522,7 @@ body, html {
   }
   
 /* Apenas para mostrar   vvv */
-  .createCard, .Facts, .ver, .ReadCards{
+  .createCard, .ver, .ReadCards{
     margin-top: 200px;
   }
 
@@ -550,13 +572,17 @@ body, html {
 
 
 .Colors{
-margin-top:200px;
+padding:160px 150px 50px 150px;
 display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-padding: 20px;
+background-color: rgb(37,36,52);
+color:white;
+gap:50px
 }
+
+
 
 
 .About{
@@ -570,6 +596,12 @@ padding: 20px;
   gap:30px;
   width:100vw;
   height:100vh
+}
+
+.Allies{
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-right: 20px;
 }
 
 
@@ -608,7 +640,7 @@ padding: 20px;
   padding: .5em 1.5em;
   font-size: 20px;
   font-weight: 600;
-  color: #7f5af0;
+  color: white;
   transition: all .3s ease;
 }
 
@@ -669,7 +701,7 @@ padding: 20px;
   padding: .5em 1.5em;
   font-size: 20px;
   font-weight: 600;
-  color: #7f5af0;
+  color: white;
   transition: all .3s ease;
 }
 
@@ -790,7 +822,7 @@ padding: 20px;
  .BlueClass p{
   width:500px;
   display:flex;
-
+  padding-left: 100px;
 }
 
 .WhiteClass{
@@ -811,7 +843,7 @@ padding: 20px;
 .WhiteClass p{
   width:500px;
   display:flex;
-
+  padding-left: 100px;
 }
 
 .RedClass{
@@ -832,7 +864,7 @@ padding: 20px;
 .RedClass p{
   width:500px;
   display:flex;
-
+  padding-right: 100px;
 }
 .BlackClass{
   background-image: url("images/BlackClass.png");
@@ -852,7 +884,7 @@ padding: 20px;
 .BlackClass p{
   width:500px;
   display:flex;
-
+  padding-right: 100px;
 }
 
 
@@ -874,7 +906,7 @@ padding: 20px;
 .GreenClass p{
   width:500px;
   display:flex;
-
+  padding-right: 100px;
 }
 
 .LearnBtn{
@@ -912,19 +944,19 @@ padding: 20px;
 .How-to-play{
   padding-top: 160px;
   padding-bottom: 50px;
-  background-image:url('/src/images/how-to-play.png');
+  background-image:url('/src/images/backgrounds/how-to-play.png');
   width: 100vw;
-/*   height: 100vh; */
-  background-size: cover; 
+/*   height: 100vh;
+ */  background-size: cover; 
   background-position: center;
 }
 
 .TypesCards{
+  background-image:url('/src/images/types-of-cards.png');
   padding-top: 160px;
   padding-bottom: 50px;
-  background-image:url('/src/images/types-of-cards.png');
   width: 100vw;
- height: 100vh;
+  height: 100vh;
   background-size: cover; /* Ensure the entire background image is visible while maintaining proportions */
   background-position: center;
   overflow: hidden;
@@ -955,6 +987,125 @@ padding: 20px;
   display:flex;
   justify-content: center;
   padding-top: 160px;
+}
+
+.custom-card{
+  background-image: url("src/images/custom-card.png");
+  height: 360px;
+  width: 260px;
+  border-radius: 20px;
+  background-size: cover;
+}
+
+.header-custom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-top: 0px;
+  padding-right: 20px;
+  margin-bottom: 0px;
+}
+.header-custom p{
+  padding-top: 17px;
+  margin: 0px
+}
+.header-custom-mana{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+.header-custom-mana p{
+  margin: 0px
+}
+.custom-card img{
+  width: 216px;
+  height: 158px;
+  margin: 0px;
+  padding-top: 4px;
+  padding-left: 2px;
+  border-radius: 0px;
+}
+.custom-card p{
+  margin: 0px;
+}
+.custom-card-type{
+  padding-left: 30px;
+}
+.custom-card-abilities{
+  padding-left: 30px;
+  padding-top: 20px;
+  width: 190px;
+}
+.custom-card-details{
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: baseline;
+}
+.custom-card-power p{
+  margin-left: 195px;
+  font-size: 11px;
+}
+
+
+.howToPlayIMG2{
+  height:450px;
+  width:auto;
+}
+
+.howToPlayIMG1{
+  height:300px;
+  width:auto;
+}
+
+.gameEx{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.howToPlayIMG3{
+  height:300px;
+  width:500px;
+}
+
+.howToPlayIMG4{
+  height:300px;
+  width:500px;
+}
+
+.howToPlayIntro{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Facts{
+  background-image: url('/src/images/cards-list-bg.png');
+  padding-top: 160px;
+  padding-bottom: 50px;
+  width: 100vw;
+  background-size: cover;
+  /* background-position: fixed; */
+  background-repeat: repeat-y;
+  color:white;
+  display:grid;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  font-style: italic;
+  justify-content: center;
+  padding:160px 70px 50px 50px;
+  gap:30px;
+}
+.header-custom-mana img{
+  width: 20px;
+  height: 20px;
+  padding-top: 17px;
 }
 
 

@@ -175,11 +175,13 @@ function Black() {
       </div>
 
       {/*   ------------------------------------- BACK BUTTON      -------------------------------------------------- */}
-      <Link to="/about">
-        <div class="container">
-          <button class="backButton">Back</button>
-        </div>
-      </Link>
+      <Link to={'/about'}>
+            <button className="btn-31">
+              <span className="text-container">
+                <span className="text">Back</span>
+              </span>
+            </button>
+          </Link>
     </section>
   );
 }

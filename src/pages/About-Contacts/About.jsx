@@ -3,7 +3,7 @@ import MTGcolors from "../../images/mtg-colors.png";
 import { Link } from "react-router-dom";
 
 // Cards
-import artifactCol from "../../images/mtg-colors/artifact.png";
+import artifactCol from "../../images/mtg-colors/colorless.png";
 import blackCol from "../../images/mtg-colors/black.png";
 import blueCol from "../../images/mtg-colors/blue.png";
 import greenCol from "../../images/mtg-colors/green.png";
@@ -14,7 +14,7 @@ import whiteCol from "../../images/mtg-colors/white.png";
 function About() {
   return (
     <section className="About">
-<div className="overlay">
+    <div className="overlay1">
       <div className="LearnBtn">
       <Link to={'/about/understand-cards'}>
             <button className="btn-31">
@@ -98,6 +98,7 @@ function About() {
         Color Wheel, based on a series of articles written by Mark Rosewater ,
         are as follows:</p>
         <br />
+        </div>
         
         <section className="BlackBar"></section>
 
@@ -163,7 +164,7 @@ function About() {
       <section className="BlackBar"></section>
 
   
-      </div>
+      
     </section>
   );
 }

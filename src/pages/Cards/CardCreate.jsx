@@ -9,8 +9,6 @@ function CardCreate() {
   const [name, setName] = useState("");
   const [mana, setMana] = useState("1");
   const [elements, setElements] = useState([]);
-  const [atk, setAtk] = useState("");
-  const [def, setDef] = useState("");
   const [type, setType] = useState("");
   const [mainAb, setMainAb] = useState("");
   const [combatAb, setCombatAb] = useState("");
@@ -63,7 +61,7 @@ function CardCreate() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    const newCard = { name, mana, elements, atk, def, type, mainAb, combatAb, imageURL };
+    const newCard = { name, mana, elements, type, mainAb, combatAb, imageURL };
 
     
     axios
@@ -104,6 +102,7 @@ function CardCreate() {
           placeholder="Name your character"
           value={name}
           required
+          maxLength={25}
           onChange={(e) => {
             setName(e.target.value);
           }}
@@ -177,29 +176,6 @@ function CardCreate() {
         />
         <label htmlFor="colorless">Colorless</label>
 
-        {/* Power | Attack and Defense*/}
-        <label>Power</label>
-        <input
-          type="text"
-          name="attack"
-          placeholder="ATK XX"
-          value={atk}
-          required
-          onChange={(e) => {
-            setAtk(e.target.value);
-          }}
-        />
-        <input
-          type="text"
-          name="defense"
-          placeholder="DEF XX"
-          value={def}
-          required
-          onChange={(e) => {
-            setDef(e.target.value);
-          }}
-        />
-
         {/* Type */}
         <label>Type</label>
         <input
@@ -207,6 +183,7 @@ function CardCreate() {
           name="type"
           value={type}
           required
+          maxLength={30}
           onChange={(e) => {
             setType(e.target.value);
           }}
@@ -219,6 +196,7 @@ function CardCreate() {
           name="main-abillities"
           value={mainAb}
           required
+          maxLength={30}
           onChange={(e) => {
             setMainAb(e.target.value);
           }}
@@ -231,6 +209,7 @@ function CardCreate() {
           name="combat-abillities"
           value={combatAb}
           required
+          maxLength={40}
           onChange={(e) => {
             setCombatAb(e.target.value);
           }}

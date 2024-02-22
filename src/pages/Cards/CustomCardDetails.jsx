@@ -28,7 +28,7 @@ function CustomCardDetails() {
             .delete(`${jsonServerLink}/${cardId}`)
             .then(() => {
                 console.log('Card deleted successfully');
-                Navigate('/cards')
+                Navigate('/custom-cards')
             })
             .catch((error) => {
                 console.error('Error deleting card:', error);

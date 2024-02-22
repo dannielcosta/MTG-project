@@ -9,7 +9,7 @@ function FactsPage() {
     <div className="Facts">
       {facts.map((fact) => (
         <article key={fact.id}>
-          <h3>{fact.fact}</h3>
+          <h3>"{fact.fact}"</h3>
         </article>
       ))}
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import artifactCol from "../../images/mtg-colors/artifact.png";
+import artifactCol from "../../images/mtg-colors/colorless.png";
 import { Link } from "react-router-dom";
 
 function Artifact() {
@@ -131,11 +131,13 @@ function Artifact() {
         "artifacts matter" sets.
       </div>
       {/*   ------------------------------------- BACK BUTTON      -------------------------------------------------- */}
-      <Link to="/about">
-        <div class="container">
-          <button class="backButton">Back</button>
-        </div>
-      </Link>
+      <Link to={'/about'}>
+            <button className="btn-31">
+              <span className="text-container">
+                <span className="text">Back</span>
+              </span>
+            </button>
+          </Link>
     </section>
   );
 }

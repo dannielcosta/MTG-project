@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 function TypesCards() {
   return (
@@ -184,6 +185,13 @@ function TypesCards() {
     </p>
   </div>
   </div>
+  <Link to={'/about'}>
+            <button className="btn-31">
+              <span className="text-container">
+                <span className="text">Back</span>
+              </span>
+            </button>
+          </Link>
   </section>
   )
 }
