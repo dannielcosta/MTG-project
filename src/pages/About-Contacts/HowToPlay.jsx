@@ -2,7 +2,7 @@ import React from 'react'
 
 function HowToPlay() {
     return (
-        <section className="How to play">
+        <section className="How-to-play">
             <div class="game-actions">
                 <h2>GAME ACTIONS</h2>
                 <p>This segment outlines the activities you'll engage in during a game, encompassing tapping your cards, invoking spells, and engaging in combat with creatures.</p>

@@ -26,9 +26,9 @@ function CardsList() {
             setFilteredCards(cards);
         } else {
             if (color.length === 0) {
-                setFilteredCards(cards.filter(card => !card.colors || card.colors.length === 0));
+                setFilteredCards(cards.filter(card => !card.colors || card.colors_identity.length === 0));
             } else {
-                setFilteredCards(cards.filter(card => card.colors?.includes(color)));
+                setFilteredCards(cards.filter(card => card.colors_identity?.includes(color)));
             }
         }
     };
