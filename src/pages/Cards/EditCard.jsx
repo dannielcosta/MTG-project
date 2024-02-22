@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import JSON_SERVER_LINK from "../../data/json-backend-cards-created";
 import { useNavigate, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function EditCard() {
   const [name, setName] = useState("");
@@ -128,138 +129,156 @@ function EditCard() {
   };
 
   return (
+    <div className="pageContainer">
     <div className="createCard">
       <h1>Edit Your Card</h1>
       <form onSubmit={handleSubmit}>
-        {/* Nome */}
-        <label>Name Your Character:</label>
-        <input
-          type="text"
-          name="name"
-          placeholder="Name your character"
-          value={name}
-          required
-          onChange={(e) => {
-            setName(e.target.value);
-          }}
-        />
+        <section className="nameInput">
+          {/* Nome */}
+          <label>Name Your Character:</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Name your character"
+            value={name}
+            required
+            maxLength={25}
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
+          />
+        </section>
 
-        {/* Mana Cost */}
-        <label>What's your card's Mana Cost:</label>
-        <input
-          type="number"
-          name="mana"
-          value={mana}
-          required
-          min="1"
-          onChange={(e) => {
-            setMana(e.target.value);
-          }}
-        />
+        <section className="nameInput">
+          {/* Mana Cost */}
+          <label>What's your card's Mana Cost:</label>
+          <input
+            type="number"
+            name="mana"
+            value={mana}
+            required
+            min="1"
+            className="numberMana"
+            onChange={(e) => {
+              setMana(e.target.value);
+            }}
+          />
+        </section>
+        <section className="elementsInput">
+          {/* Elements */}
+          <input
+            type="checkbox"
+            id="white"
+            name="element"
+            value="white"
+            onChange={handleCheckboxChange}
+          />
+          <label htmlFor="white">White</label>
 
-        {/* Elements */}
-        <input
-          type="checkbox"
-          id="white"
-          name="element"
-          value="white"
-          onChange={handleCheckboxChange}
-        />
-        <label htmlFor="white">White</label>
+          <input
+            type="checkbox"
+            id="blue"
+            name="element"
+            value="blue"
+            onChange={handleCheckboxChange}
+          />
+          <label htmlFor="blue">Blue</label>
 
-        <input
-          type="checkbox"
-          id="blue"
-          name="element"
-          value="blue"
-          onChange={handleCheckboxChange}
-        />
-        <label htmlFor="blue">Blue</label>
+          <input
+            type="checkbox"
+            id="black"
+            name="element"
+            value="black"
+            onChange={handleCheckboxChange}
+          />
+          <label htmlFor="black">Black</label>
 
-        <input
-          type="checkbox"
-          id="black"
-          name="element"
-          value="black"
-          onChange={handleCheckboxChange}
-        />
-        <label htmlFor="black">Black</label>
+          <input
+            type="checkbox"
+            id="red"
+            name="element"
+            value="red"
+            onChange={handleCheckboxChange}
+          />
+          <label htmlFor="red">Red</label>
 
-        <input
-          type="checkbox"
-          id="red"
-          name="element"
-          value="red"
-          onChange={handleCheckboxChange}
-        />
-        <label htmlFor="red">Red</label>
+          <input
+            type="checkbox"
+            id="green"
+            name="element"
+            value="green"
+            onChange={handleCheckboxChange}
+          />
+          <label htmlFor="green">Green</label>
 
-        <input
-          type="checkbox"
-          id="green"
-          name="element"
-          value="green"
-          onChange={handleCheckboxChange}
-        />
-        <label htmlFor="green">Green</label>
-
-        <input
-          type="checkbox"
-          id="colorless"
-          name="element"
-          value="colorless"
-          onChange={handleCheckboxChange}
-        />
-        <label htmlFor="colorless">Colorless</label>
-
+          <input
+            type="checkbox"
+            id="colorless"
+            name="element"
+            value="colorless"
+            onChange={handleCheckboxChange}
+          />
+          <label htmlFor="colorless">Colorless</label>
+        </section>
         {/* Type */}
-        <label>Type</label>
-        <input
-          type="text"
-          name="type"
-          value={type}
-          required
-          onChange={(e) => {
-            setType(e.target.value);
-          }}
-        />
-
-        {/* Description of the Abillities of the card when it's in battle */}
-        <label>Main Abillities</label>
-        <input
-          type="text"
-          name="main-abillities"
-          value={mainAb}
-          required
-          maxLength={25}
-          onChange={(e) => {
-            setMainAb(e.target.value);
-          }}
-        />
+        <section className="nameInput">
+          <label>Type:</label>
+          <input
+            type="text"
+            name="type"
+            value={type}
+            required
+            maxLength={30}
+            onChange={(e) => {
+              setType(e.target.value);
+            }}
+          />
+        </section>
+        <section className="nameInput">
+          {/* Description of the Abillities of the card when it's in battle */}
+          <label>Main Abillities:</label>
+          <input
+            type="text"
+            name="main-abillities"
+            value={mainAb}
+            required
+            maxLength={30}
+            onChange={(e) => {
+              setMainAb(e.target.value);
+            }}
+          />
+        </section>
 
         {/* Description of what happens when the card enters the game */}
-        <label>Combat Abillities</label>
-        <input
-          type="text"
-          name="combat-abillities"
-          value={combatAb}
-          required
-          onChange={(e) => {
-            setCombatAb(e.target.value);
-          }}
-        />
-
-        {/* Propmpt for the AI Image generator */}
-        <label>Write the prompt for your card's image</label>
-        <input
-          type="text"
-          id="prompt"
-          value={prompt}
-          onChange={(e) => setPrompt(e.target.value)}
-        />
-        <button onClick={generateImages} disabled={isLoading}>
-          {isLoading ? "Generating..." : "Generate Images"}
-        </button>
+        <section className="nameInput">
+          <label>Combat Abillities:</label>
+          <input
+            type="text"
+            name="combat-abillities"
+            value={combatAb}
+            required
+            maxLength={40}
+            onChange={(e) => {
+              setCombatAb(e.target.value);
+            }}
+          />
+        </section>
+        <section className="nameInput">
+          {/* Propmpt for the AI Image generator */}
+          <label>Write the prompt for your card's image:</label>
+          <input
+            type="text"
+            id="prompt"
+            value={prompt}
+            onChange={(e) => setPrompt(e.target.value)}
+          />
+        </section>
+        <section className="butonsInput">
+          <button onClick={generateImages} disabled={isLoading}>
+            {isLoading ? "Generating..." : "Generate Images"}
+          </button>
+          <button type="submit">Submit</button>
+        </section>
 
         {generatedImages.length > 0 && (
           <div>
@@ -274,8 +293,17 @@ function EditCard() {
             ))}
           </div>
         )}
-        <button type="submit">Submit</button>
       </form>
+      <div className="ButtonCentered">
+        <Link to={"/"}>
+          <button className="btn-31">
+            <span className="text-container">
+              <span className="text">Back</span>
+            </span>
+          </button>
+        </Link>
+      </div>
+    </div>
     </div>
   );
 }
