@@ -120,6 +120,7 @@ function HowToPlay() {
           waiting to resolve, the game will move to the next step.
         </p>
       </div>
+      <div className="ButtonCentered">
       <Link to={"/about"}>
         <button className="btn-31">
           <span className="text-container">
@@ -127,6 +128,7 @@ function HowToPlay() {
           </span>
         </button>
       </Link>
+      </div>
     </section>
   );
 }

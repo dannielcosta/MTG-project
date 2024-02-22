@@ -14,7 +14,7 @@ import whiteCol from "../../images/mtg-colors/white.png";
 function About() {
   return (
     <section className="About">
-    <div className="overlay1">
+    <div>
       <div className="LearnBtn">
       <Link to={'/about/understand-cards'}>
             <button className="btn-31">
@@ -161,7 +161,9 @@ function About() {
         </div>
       
       </div>
+
       <section className="BlackBar"> </section>
+      <div className="ButtonCenteredBR">
       <Link to={'/'}>
             <button className="btn-31">
               <span className="text-container">
@@ -169,7 +171,7 @@ function About() {
               </span>
             </button>
           </Link>
-  
+      </div>
       
     </section>
   );

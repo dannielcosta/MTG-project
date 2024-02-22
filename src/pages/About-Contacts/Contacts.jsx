@@ -68,7 +68,7 @@ function Contacts() {
                 </div>
                
         </div>
-        
+        <div className="ButtonCentered">
              <Link to={'/'}>
             <button className="btn-31">
               <span className="text-container">
@@ -76,6 +76,7 @@ function Contacts() {
               </span>
             </button>
           </Link>
+          </div>
         
         </section>
   )

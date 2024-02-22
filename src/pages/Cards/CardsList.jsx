@@ -96,7 +96,7 @@ function CardsList() {
                     <p>No cards found.</p>
                 )}
             </div>
-            
+            <div className="ButtonCentered">
             <Link to={'/'}>
             <button className="btn-31">
               <span className="text-container">
@@ -104,6 +104,7 @@ function CardsList() {
               </span>
             </button>
           </Link>
+          </div>
         </div>
     );
 }

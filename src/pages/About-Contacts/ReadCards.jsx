@@ -71,6 +71,7 @@ function ReadCards() {
             </ol>
           </div>
         </div>
+        <div className="ButtonCentered">
         <Link to={'/about'}>
             <button className="btn-31">
               <span className="text-container">
@@ -78,6 +79,7 @@ function ReadCards() {
               </span>
             </button>
           </Link>
+          d</div>
         </div>
     </section>
   );

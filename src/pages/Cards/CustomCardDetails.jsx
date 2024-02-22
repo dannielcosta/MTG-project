@@ -37,6 +37,7 @@ function CustomCardDetails() {
 
 
   return (
+    <section>
     <div className="ver">
         <h1>{card.name}</h1>
         <img src={card.imageURL}/>
@@ -45,6 +46,9 @@ function CustomCardDetails() {
         </Link>
         <button onClick={() => handleDeleteCard(card.Id)}>Delete Card</button>
     </div>
+    <div className="ButtonCentered">
+    </div>
+    </section>
   )
 }
 

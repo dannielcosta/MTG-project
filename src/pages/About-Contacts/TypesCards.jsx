@@ -1,11 +1,12 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import MultiCards from '../../images/multipleCards.png'
 
 function TypesCards() {
   return (
-    <section>
+<section className="Colors">
         <div className="TypesCards">
-        
+        <img src={`${MultiCards}`} className="typeCardsImg"/>
     <div class="spell">
     <h2>What’s a Spell:</h2>
     <p>
@@ -185,6 +186,7 @@ function TypesCards() {
     </p>
   </div>
   </div>
+  <div className="ButtonCentered">
   <Link to={'/about'}>
             <button className="btn-31">
               <span className="text-container">
@@ -192,6 +194,7 @@ function TypesCards() {
               </span>
             </button>
           </Link>
+          </div>
   </section>
   )
 }

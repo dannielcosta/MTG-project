@@ -586,16 +586,17 @@ gap:50px
 
 
 .About{
-  background-image: url('images/magic-the-gathering-background.jpeg');
+  background-image: url('images/backgrounds/about-background.png');
   margin-top: 100px;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding:160px 50px 50px 50px;
   gap:30px;
   width:100vw;
   height:100vh
+  
 }
 
 .Allies{
@@ -953,13 +954,13 @@ gap:50px
 
 .TypesCards{
   background-image:url('/src/images/types-of-cards.png');
-  padding-top: 160px;
   padding-bottom: 50px;
   width: 100vw;
   height: 100vh;
   background-size: cover; /* Ensure the entire background image is visible while maintaining proportions */
   background-position: center;
   overflow: hidden;
+ 
 /*   background-size: cover; 
   background-position: center; */
 }
@@ -1108,4 +1109,26 @@ gap:50px
   padding-top: 17px;
 }
 
+
+.ButtonCentered{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typeCardsImg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:auto;
+  height:auto;
+  align-content:center
+}
+
+.ButtonCenteredBR{
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  
+}
 

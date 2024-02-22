@@ -13,6 +13,7 @@ function FactsPage() {
           <h3>"{fact.fact}"</h3>
         </article>
       ))}
+      <div className="ButtonCentered">
        <Link to={'/'}>
             <button className="btn-31">
               <span className="text-container">
@@ -20,6 +21,7 @@ function FactsPage() {
               </span>
             </button>
           </Link>
+          </div>
     </div>
   );
   

@@ -91,6 +91,7 @@ function CardCreate() {
   }
 
   return (
+
     <div className="createCard">
       <h1>Create Your Own Card</h1>
       <form onSubmit={handleSubmit}>
@@ -246,6 +247,7 @@ function CardCreate() {
         )}
         <button type="submit">Submit</button>
       </form>
+      <div className="ButtonCentered">
       <Link to={'/'}>
             <button className="btn-31">
               <span className="text-container">
@@ -253,7 +255,9 @@ function CardCreate() {
               </span>
             </button>
           </Link>
+      </div>
     </div>
+
   );
 }
 
