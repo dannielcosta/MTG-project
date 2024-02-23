@@ -102,7 +102,7 @@ html {
   height: 100vh;
   gap: 40px;
   justify-content: space-evenly;
-  background-image: url("/src/images/day-section.jpg");
+  background-image: url("/images/day-section.jpg");
   width: 100vw;
   height: 100vh;
   background-size: cover; /* Ensure the entire background image is visible while maintaining proportions */
@@ -122,10 +122,10 @@ html {
   height: 450px;
 }
 .dev1 {
-  background-image: url("/src/images/custom-card-daniel.png");
+  background-image: url("/images/custom-card-daniel.png");
 }
 .dev2 {
-  background-image: url("/src/images/custom-card-filipe.png");
+  background-image: url("/images/custom-card-filipe.png");
 }
 .devName {
   padding-left: 40px;
@@ -203,7 +203,7 @@ html {
   background-color: lightcoral;
 }
 .cardsListPage {
-  background-image: url("/src/images/cards-list-bg.png");
+  background-image: url("/images/cards-list-bg.png");
   background-attachment: fixed; /* Keeps the background image fixed as the page scrolls */
   padding-top: 160px;
   width: 100vw;
@@ -1126,7 +1126,7 @@ html {
 .How-to-play {
   padding-top: 160px;
   padding-bottom: 50px;
-  background-image: url("/src/images/backgrounds/how-to-play.png");
+  background-image: url("/images/backgrounds/how-to-play.png");
   width: 100vw;
   /*   height: 100vh;
  */
@@ -1135,7 +1135,7 @@ html {
 }
 
 .TypesCards{
-  background-image:url('/src/images/types-of-cards.png');
+  background-image:url('/images/types-of-cards.png');
   margin-top: 100px;
   display:flex;
   flex-direction: column;
@@ -1145,7 +1145,7 @@ html {
   gap:30px;
 }
 .HowtoRead {
-  background-image: url("/src/images/how-to-read-cards.png");
+  background-image: url("/images/how-to-read-cards.png");
   width: 100vw;
   background-size: cover; /* Ensure the entire background image is visible while maintaining proportions */
   background-position: center;
@@ -1171,7 +1171,7 @@ html {
 }
 
 .custom-card {
-  background-image: url("src/images/custom-card.png");
+  background-image: url("/images/custom-card.png");
   height: 360px;
   width: 260px;
   border-radius: 20px;
@@ -1274,7 +1274,7 @@ html {
 }
 
 .Facts {
-  background-image: url("/src/images/cards-list-bg.png");
+  background-image: url("/images/cards-list-bg.png");
   padding-top: 160px;
   padding-bottom: 50px;
   width: 100vw;
@@ -1404,7 +1404,7 @@ html {
 
 
 .formBg{
-  background-image: url('/src/images/backgrounds/form-bg.png');
+  background-image: url('/images/backgrounds/form-bg.png');
   width: 100vw;
   height: 100vh;
   background-size: cover; /* Ensure the entire background image is visible while maintaining proportions */
