@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams , Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import APIURL from '../../data/mtg-api'
@@ -34,6 +34,13 @@ function CardDetails() {
           <h3>Artist: {card.artist}</h3>
           <h3>Date Of Release: {card.released_at}</h3>
           <h3>Edition: {card.set_name}</h3>
+          <Link to="/cards">
+          <button className="btn-31">
+            <span className="text-container">
+              <span className="text">Back</span>
+            </span>
+          </button> 
+        </Link>
         </section>
       </div>      
     </div>

@@ -303,6 +303,13 @@ html {
   flex-direction: column;
   color: black;
 }
+
+/* .cardDetailsPageText button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 .detailsContainer img {
   width: 300px;
   border-radius: 20px;
@@ -626,10 +633,7 @@ html {
   gap:50px
   }
 
-  .Colors h1, h2, h3, h4, h5{
-    color:black;
-    text-align: center;
-  }
+
 
 
 .About{
@@ -1234,4 +1238,18 @@ html {
 }
 .buttons button{
   color: white;
+}
+
+.about-colors-black-div{
+  background-color: black;
+  color:white;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+}
+
+
+.title{
+    color:rgb(244,182,63);
+    text-align: center;
 }

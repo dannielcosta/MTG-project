@@ -9,7 +9,7 @@ function TypesCards() {
         <div className="TypesCards">
         <img src={`${MultiCards}`} className="typeCardsImg"/>
     <div class="spell">
-    <h2>What’s a Spell:</h2>
+    <h2 className="title">What’s a Spell:</h2>
     <p>
       In Magic: The Gathering (MTG), a spell encompasses any card played
       by a player during the game. Normally, spells originate from your
@@ -20,7 +20,7 @@ function TypesCards() {
   </div>
 
   <div class="creatures">
-    <h2>Creatures:</h2>
+    <h2 className="title">Creatures:</h2>
     <p>
       Creature cards in Magic: The Gathering are your main force for
       attacking, defending, and activating abilities during your turn.
@@ -45,7 +45,7 @@ function TypesCards() {
   </div>
 
   <div class="artifacts">
-    <h2>Artifacts:</h2>
+    <h2 className="title">Artifacts:</h2>
     <p>
       Harness the power of artifact cards to outsmart your opponent!
       Artifacts represent a range of special items, devices, and tools,
@@ -61,7 +61,7 @@ function TypesCards() {
   </div>
 
   <div class="enchantments">
-    <h2>Enchantments:</h2>
+    <h2 className="title">Enchantments:</h2>
     <p>
       Enchantment cards in Magic: The Gathering offer versatile ways to
       disrupt your opponent's strategy, bolster your defenses, or alter
@@ -85,7 +85,7 @@ function TypesCards() {
   </div>
 
   <div class="sorcery">
-    <h2>Sorcery:</h2>
+    <h2 className="title">Sorcery:</h2>
     <p>
       Sorcery cards in Magic: The Gathering provide potent spells that
       create immediate, impactful effects, ideal for shaking up your
@@ -102,7 +102,7 @@ function TypesCards() {
   </div>
 
   <div class="instant">
-    <h2>Instant:</h2>
+    <h2 className="title">Instant:</h2>
     <p>
       Instant cards in Magic: The Gathering offer quick, one-time effects
       that can turn the tide of a game. Whether dealing damage or
@@ -118,7 +118,7 @@ function TypesCards() {
   </div>
 
   <div class="planeswalker">
-    <h2>Planeswalker:</h2>
+    <h2 className="title">Planeswalker:</h2>
     <p>
       Planeswalker cards in Magic: The Gathering are formidable allies
       that can turn the tide of battle with their reusable abilities,
@@ -142,7 +142,7 @@ function TypesCards() {
   </div>
 
   <div class="battle">
-    <h2>Battle:</h2>
+    <h2 className="title">Battle:</h2>
     <p>
       Battle cards in Magic: The Gathering are double-faced cards that
       start on the battlefield face-up, displaying defense counters. These
@@ -165,7 +165,7 @@ function TypesCards() {
   </div>
 
   <div class="lands">
-    <h2>Lands:</h2>
+    <h2 className="title">Lands:</h2>
     <p>
       In Magic: The Gathering, land cards represent different terrains and
       environments across the Multiverse. They're crucial because they

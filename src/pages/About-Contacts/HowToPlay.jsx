@@ -13,7 +13,7 @@ function HowToPlay() {
   return (
     <section className="Colors">
       <div class="game-actions">
-        <h2>GAME ACTIONS</h2>
+        <h2 className="title">GAME ACTIONS</h2>
         <p>
           This segment outlines the activities you'll engage in during a game,
           encompassing tapping your cards, invoking spells, and engaging in
@@ -26,7 +26,7 @@ function HowToPlay() {
       </div>
 
       <div class="tapping-and-untapping">
-        <h2>TAPPING AND UNTAPPING</h2>
+        <h2 className="title">TAPPING AND UNTAPPING</h2>
         <p>
           Tapping a card involves rotating it sideways to indicate its use for
           the turn. This action is performed when you utilize a land to generate
@@ -40,7 +40,7 @@ function HowToPlay() {
       </div>
 
       <div class="casting-spells">
-        <h2>CASTING SPELLS</h2>
+        <h2 className="title">CASTING SPELLS</h2>
         <p>
           When you want to cast a spell, you need to pay its mana cost, which
           you can do by tapping lands or other permanents to generate the
@@ -54,7 +54,7 @@ function HowToPlay() {
       </div>
 
       <div class="attacking-and-blocking">
-        <h2>ATTACKING AND BLOCKING</h2>
+        <h2 className="title">ATTACKING AND BLOCKING</h2>
         <p>
           The main way to win in the game is by attacking with your creatures.
           When your creature attacks an opponent and isn't blocked, it deals
@@ -82,7 +82,7 @@ function HowToPlay() {
       </div>
 
       <div class="advanced-topics">
-        <h2>ADVANCED TOPICS</h2>
+        <h2 className="title">ADVANCED TOPICS</h2>
         <p>
           Magic: The Gathering offers an exciting experience due to its vast
           array of cards, each offering unique abilities and interactions. This
@@ -93,7 +93,7 @@ function HowToPlay() {
       </div>
 
       <div class="parts-of-the-turn">
-        <h2>TARGETING</h2>
+        <h2 className="title">TARGETING</h2>
         <p>
           In Magic, some spells and abilities have the word "target," indicating
           what they affect. You must select all targets for a spell when you

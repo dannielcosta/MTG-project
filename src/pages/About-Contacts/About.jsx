@@ -75,7 +75,7 @@ function About() {
           </p>
         </div>
 
-        <div className="about-colors">
+        <div className="about-colors-black-div">
           <strong>The five colors of Magic: The Gathering</strong>
           <br />
           <br />

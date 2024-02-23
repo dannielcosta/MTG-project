@@ -9,7 +9,7 @@ function ReadCards() {
       <div className="Colors">
 
           <section className="title">
-            <h3>How to read the card</h3>
+            <h3 className="title">How to read the card</h3>
           </section>
           
           <div className="PlayRules">
