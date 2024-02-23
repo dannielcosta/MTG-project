@@ -20,6 +20,25 @@ function CustomCardsList() {
       });
   }, []);
 
+  const handleDeleteCard = (id) => {
+    axios
+      .delete(`${jsonServerLink}/${id}`)
+      .then(() => {
+        console.log('Card deleted successfully');
+        // Optionally, you can refresh the card list after deletion
+        axios.get(jsonServerLink)
+          .then((response) => {
+            setCards(response.data);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      })
+      .catch((error) => {
+        console.error('Error deleting card:', error);
+      });
+  };
+
   return (
     <div className="cardsListPage">
       <h1>Custom Cards List</h1>
@@ -29,7 +48,7 @@ function CustomCardsList() {
             <span className="text-container">
               <span className="text">Cards List</span>
             </span>
-          </button>
+          </button> 
         </Link>
       </section>
       <div className="cardsDisplay">
@@ -55,7 +74,7 @@ function CustomCardsList() {
                       ))}
                   </section>
                 </section>
-                <img src={card.imageURL} alt={card.name} />
+                <img src={card.imageURL} alt={card.name} className="AIimg"/>
                 <p className="custom-card-type">
                   <b>{card.type}</b>
                 </p>
@@ -72,7 +91,7 @@ function CustomCardsList() {
                 <Link to={`/custom-card-edit/${card.id}`}>
                   <button>Edit Card</button>
                 </Link>
-                <button> button</button>
+                <button onClick={() => handleDeleteCard(card.id)} className="delete-button">Delete card</button>
               </div>
             </div>
           ))}
