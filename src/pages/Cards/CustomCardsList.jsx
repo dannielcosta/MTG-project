@@ -55,9 +55,7 @@ function CustomCardsList() {
                       ))}
                   </section>
                 </section>
-                <Link to={`/custom-cards/${card.id}`}>
-                  <img src={card.imageURL} alt={card.name} />
-                </Link>
+                <img src={card.imageURL} alt={card.name} />
                 <p className="custom-card-type">
                   <b>{card.type}</b>
                 </p>
@@ -69,6 +67,12 @@ function CustomCardsList() {
                     <p>{card.combatAb}</p>
                   </section>
                 </section>
+              </div>
+              <div className="buttons">
+                <Link to={`/custom-card-edit/${card.id}`}>
+                  <button>Edit Card</button>
+                </Link>
+                <button> button</button>
               </div>
             </div>
           ))}
