@@ -89,6 +89,7 @@ function CardCreate() {
   }
 
   return (
+    <section className="Colors">
     <div className="pageContainer">
     <div className="createCard">
       <h1>Create Your Own Card</h1>
@@ -265,6 +266,7 @@ function CardCreate() {
       </div>
     </div>
     </div>
+    </section>
   );
 }
 
