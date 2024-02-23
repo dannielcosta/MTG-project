@@ -89,7 +89,7 @@ function CardCreate() {
   }
 
   return (
-    <section className="Colors">
+    <section className="formBg">
     <div className="pageContainer">
     <div className="createCard">
       <h1>Create Your Own Card</h1>

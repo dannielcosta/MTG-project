@@ -304,11 +304,12 @@ html {
   color: black;
 }
 
-/* .cardDetailsPageText button{
+.cardDetailsPageText button{
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+  margin:auto
+} 
 
 .detailsContainer img {
   width: 300px;
@@ -1252,4 +1253,9 @@ html {
 .title{
     color:rgb(244,182,63);
     text-align: center;
+}
+
+
+.formBg{
+  background-image: url('/src/images/backgrounds/form-bg.png');
 }
