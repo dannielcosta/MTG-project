@@ -65,7 +65,7 @@ function CardCreate() {
     axios
       .post(`${jsonServerLink}`, newCard)
       .then(() => {
-        navigate("/");
+        navigate("/custom-cards");
       })
       .catch((error) => {
         console.log(error);
@@ -91,7 +91,7 @@ function CardCreate() {
   return (
     <section className="formBg">
     <div className="pageContainer">
-    <div className="createCard">
+    <div className="createCard"> 
       <h1>Create Your Own Card</h1>
       <form onSubmit={handleSubmit}>
         <section className="nameInput">

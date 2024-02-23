@@ -58,7 +58,7 @@ function CustomCardsList() {
           </button> 
         </Link>
       </section>
-      <p className="mindThis">(Mind that the cards can take some seconds to reload)</p>
+      <p className="mindThis"><i>(Mind that the cards can take some seconds to reload...)</i></p>
       <div className="cardsDisplay">
         {cards.length > 0 &&
           cards.map((card) => (

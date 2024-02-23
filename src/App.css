@@ -1370,10 +1370,11 @@ html {
   padding: 50px;
 }
 
-.newCardContainer{
+.newCArdContainer{
   display: flex;
   flex-direction: column;
- justify-content: center;
+  justify-content: center;
+  padding-bottom: 30px;
 }
 
 .buttons{
