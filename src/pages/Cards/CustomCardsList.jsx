@@ -76,7 +76,7 @@ function CustomCardsList() {
                         <img
                           className="elements-color"
                           key={index}
-                          src={`src/images/mtg-colors/${element}.png`}
+                          src={`/images/mtg-colors/${element}.png`}
                           alt={element}
                         />
                       ))}

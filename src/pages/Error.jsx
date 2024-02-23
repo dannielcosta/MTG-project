@@ -12,7 +12,7 @@ function Error() {
               </span>
           </button>
         </Link>
-        <img src={"/src/images/404-cardNotFound.webp"} style={{width:"280px", borderRadius: "20px"}} />   </div>
+        <img src={"images/404-cardNotFound.webp"} style={{width:"280px", borderRadius: "20px"}} />   </div>
   )
 }
 

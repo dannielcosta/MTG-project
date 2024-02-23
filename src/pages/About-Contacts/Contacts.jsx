@@ -24,7 +24,7 @@ function Contacts() {
             </section>
             <section className="devType">
               <p>Developer - God Mode</p>
-              <img src={"src/images/logo.png"} />
+              <img src={"/images/logo.png"} />
             </section>
             <section className="fullStack">
               <p>Full-Stack Web Developer</p>
@@ -57,7 +57,7 @@ function Contacts() {
             </section>
             <section className="devType">
               <p>Developer - God Mode</p>
-              <img src={"src/images/logo.png"} />
+              <img src={"/images/logo.png"} />
             </section>
             <section className="fullStack">
               <p>Full-Stack Web Developer</p>
