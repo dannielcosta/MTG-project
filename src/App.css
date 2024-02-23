@@ -1405,8 +1405,8 @@ html {
 
 .formBg{
   background-image: url('/images/backgrounds/form-bg.png');
-  width: 100vw;
-  height: 100vh;
+ /*  width: 100vw;
+  height: 100vh; */
   background-size: cover; /* Ensure the entire background image is visible while maintaining proportions */
   background-position: center;
   overflow: hidden;
