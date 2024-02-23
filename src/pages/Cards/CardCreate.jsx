@@ -256,7 +256,7 @@ function CardCreate() {
         )}
       </form>
       <div className="ButtonCentered">
-        <Link to={"/"}>
+        <Link to={"/cards"}>
           <button className="btn-31">
             <span className="text-container">
               <span className="text">Back</span>

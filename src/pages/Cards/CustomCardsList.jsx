@@ -50,7 +50,15 @@ function CustomCardsList() {
             </span>
           </button> 
         </Link>
+        <Link to="/create-your-card">
+          <button className="btn-31 create">
+            <span className="text-container">
+              <span className="text">Create Your Card</span>
+            </span>
+          </button> 
+        </Link>
       </section>
+      <p className="mindThis">(Mind that the cards can take some seconds to reload)</p>
       <div className="cardsDisplay">
         {cards.length > 0 &&
           cards.map((card) => (

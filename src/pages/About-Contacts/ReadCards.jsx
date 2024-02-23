@@ -79,7 +79,7 @@ function ReadCards() {
               </span>
             </button>
           </Link>
-          d</div>
+          </div>
         </div>
     </section>
   );

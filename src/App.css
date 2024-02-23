@@ -71,7 +71,7 @@ html {
   padding: 0;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 50px;
   z-index: 1;
 }
 
@@ -191,6 +191,10 @@ html {
   text-align: center;
   margin-top: 50px;
   height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 .sectionDay {
@@ -200,12 +204,13 @@ html {
 }
 .cardsListPage {
   background-image: url("/src/images/cards-list-bg.png");
+  background-attachment: fixed; /* Keeps the background image fixed as the page scrolls */
   padding-top: 160px;
-  padding-bottom: 50px;
   width: 100vw;
+  height: 100vh;
   background-size: cover;
-  /* background-position: fixed; */
-  background-repeat: repeat-y;
+  background-position: center;
+  overflow: auto; /* Allows the content to scroll */
 }
 
 .cardsListPage h1 {
@@ -266,6 +271,7 @@ html {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin-right: 20px;
+  margin-bottom: 120px;
 
   justify-content: center;
 }
@@ -388,6 +394,8 @@ html {
   padding: 1rem 2rem;
   position: relative;
   text-transform: uppercase;
+/*   background-color: yellow;
+  color: #fff; */
 }
 
 .btn-31:before {
@@ -415,6 +423,7 @@ html {
 
 .btn-31:hover:before {
   --progress: 0%;
+/*   background: yellow; */
 }
 
 .btn-31 .text-container {
@@ -431,6 +440,142 @@ html {
 }
 
 .btn-31:hover .text {
+  -webkit-animation: move-up-alternate 0.3s ease forwards;
+  animation: move-up-alternate 0.3s ease forwards;
+}
+
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.create,
+.create *,
+.create :after,
+.create :before,
+.create:after,
+.create:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.create {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+
+.create:disabled {
+  cursor: default;
+}
+
+.create:-moz-focusring {
+  outline: auto;
+}
+
+.create svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.create [hidden] {
+  display: none;
+}
+
+.create {
+  border-width: 1px;
+  padding: 1rem 2rem;
+  position: relative;
+  text-transform: uppercase;
+  background-color: rgb(244,182,63);
+  color: #fff;
+}
+
+.create:before {
+  --progress: 100%;
+  background: #fff;
+  -webkit-clip-path: polygon(
+    100% 0,
+    var(--progress) var(--progress),
+    0 100%,
+    100% 100%
+  );
+  clip-path: polygon(
+    100% 0,
+    var(--progress) var(--progress),
+    0 100%,
+    100% 100%
+  );
+  content: "";
+  inset: 0;
+  position: absolute;
+  transition: -webkit-clip-path 0.2s ease;
+  transition: clip-path 0.2s ease;
+  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+}
+
+.create:hover:before {
+  --progress: 0%;
+  background: white;
+}
+
+.create .text-container {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.create .text {
+  display: block;
+  font-weight: 900;
+  mix-blend-mode: difference;
+  position: relative;
+}
+
+.create:hover .text {
   -webkit-animation: move-up-alternate 0.3s ease forwards;
   animation: move-up-alternate 0.3s ease forwards;
 }
@@ -616,6 +761,7 @@ html {
   color: rgb(244, 182, 63);
   filter: drop-shadow(0 0 10px #f88c19aa);
   background-color: transparent;
+  font-size: 20px;
 }
 
 .Allies {
@@ -1173,7 +1319,7 @@ html {
 }
 
 .pageContainer{
-  background-color:  rgb(37,36,52);
+  background-color: none;
   background-size: cover;
   background-position: 0;
   height: 100vh;
@@ -1258,4 +1404,29 @@ html {
 
 .formBg{
   background-image: url('/src/images/backgrounds/form-bg.png');
+  width: 100vw;
+  height: 100vh;
+  background-size: cover; /* Ensure the entire background image is visible while maintaining proportions */
+  background-position: center;
+  overflow: hidden;
+}
+
+.errorPage{
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: black;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover; /* Ensure the entire background image is visible while maintaining proportions */
+  background-position: center;
+  overflow: hidden;
+}
+.mindThis{
+  color: white;
+  text-align: center;
 }

@@ -129,6 +129,7 @@ function EditCard() {
   };
 
   return (
+    <section className="formBg">
     <div className="pageContainer">
     <div className="createCard">
       <h1>Edit Your Card</h1>
@@ -305,6 +306,7 @@ function EditCard() {
       </div>
     </div>
     </div>
+    </section>
   );
 }
 export default EditCard;

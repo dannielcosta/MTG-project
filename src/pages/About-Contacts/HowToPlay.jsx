@@ -109,7 +109,7 @@ function HowToPlay() {
         </p>
       </div>
       <div className="turn-description">
-        <h2>PARTS OF THE TURN</h2>
+        <h2 className="title">PARTS OF THE TURN</h2>
         <p>
           Each turn proceeds in the same sequence. Whenever you enter a new step
           or phase, any triggered abilities that happen during that step or
