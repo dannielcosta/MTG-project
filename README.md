@@ -1,10 +1,10 @@
 # Magic The Gathering Project 
 
-This React web app is designed to implement CRUD operations.
+This ReactJS web app is designed to implement CRUD operations.
 The Read part is done by fetching information from the API, while the Create, Update and Delete functions are all done on a mock backend json server.
 The user can use the website to:
 - View some of the existing cards, reading from the API;
-- Create, update and delete their own cards, where the image is AI generated, by prompts inputed by the user.
+- Create, update and delete their own cards, where the image is AI generated, by prompts inputted by the user.
 - Explore the story, rules and how to play the game.
 
 
