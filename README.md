@@ -70,7 +70,7 @@ Link: https://api.scryfall.com/cards//search?q=c
 
 ## 8 - Credits
 
-This game was created by 🛠️ [Filipe](https://github.com/FilipeTeixeira09) and 🛠️ [Daniel](https://github.com/dannielcosta) as a project for the first module of Ironhack WebDev Bootcamp.
+This Web App was created by 🛠️ [Filipe](https://github.com/FilipeTeixeira09) and 🛠️ [Daniel](https://github.com/dannielcosta) as a project for the second module of Ironhack WebDev Bootcamp.
 
 ---
 
