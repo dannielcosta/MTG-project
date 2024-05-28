@@ -1,5 +1,6 @@
 import './App.css'
 import { Routes, Route} from 'react-router-dom';
+import { useEffect } from 'react'
 
 // Components
 import Navbar from './components/Navbar';
@@ -33,7 +34,9 @@ import White from './pages/Colors/White';
 import ReadCards from './pages/About-Contacts/ReadCards'
 
 function App() {
-
+  useEffect(() => {
+    alert("Important Information :\n\nThis project is created specifically for student use and educational purposes. Please be aware that all copyrights and trademarks associated with this project belong to their respective owners.\n\nFor any questions or permissions beyond the scope of this notice, please contact the appropriate copyright or trademark owner.\n\nThank you for your cooperation.");
+  }, []);
 
   return (
     
